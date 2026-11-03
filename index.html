@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التحدي الأكبر – خبراء الدراسات الاجتماعية</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Cairo & Amiri -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Amiri:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        amber: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        maroon: {
+                            800: '#800000',
+                            900: '#4a0000',
+                        },
+                        navy: {
+                            800: '#0f172a',
+                            900: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        amiri: ['Amiri', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #020617 100%);
+            min-height: 100vh;
+            color: #f8fafc;
+        }
+        
+        .gold-border {
+            border: 2px solid #f59e0b;
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(90deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .certificate-border {
+            border: 12px solid #b45309;
+            outline: 4px solid #f59e0b;
+            outline-offset: -8px;
+            background-color: #fffdfa;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #f59e0b;
+            border-radius: 4px;
+        }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #printable-certificate, #printable-certificate * {
+                visibility: visible;
+            }
+            #printable-certificate {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen custom-scrollbar">
+
+    <!-- البنر الرئيسي الثابت العلوي -->
+    <header class="bg-gradient-to-r from-navy-900 via-emerald-900 to-maroon-900 border-b-2 border-amber-500 shadow-xl py-3 px-4 text-center sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <i class="fa-solid fa-graduation-cap text-amber-400 text-3xl"></i>
+                <div class="text-right">
+                    <h1 class="text-lg md:text-xl font-black text-amber-400">التحدي الأكبر – خبراء الدراسات الاجتماعية</h1>
+                    <p class="text-xs text-slate-300">مدرسة محمد بن راشد ح2 – ح3 بنين – دبي</p>
+                </div>
+            </div>
+            <div class="bg-slate-900/80 px-4 py-1.5 rounded-full border border-amber-500/40 text-xs md:text-sm font-semibold text-amber-300">
+                <i class="fa-solid fa-pen-nib ml-1"></i> تصميم وإعداد: <span class="text-white font-bold">رائد السقار</span> | مدرس الدراسات الاجتماعية
+            </div>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي للمنافسة -->
+    <main class="flex-grow container mx-auto px-4 py-6 max-w-6xl">
+        
+        <!-- واجهة البداية والتسجيل -->
+        <section id="start-screen" class="bg-slate-900/90 rounded-2xl p-6 md:p-10 border border-slate-700 shadow-2xl backdrop-blur-md">
+            <div class="text-center max-w-3xl mx-auto space-y-6">
+                <div class="inline-block p-4 rounded-full bg-amber-500/10 border border-amber-500/30 mb-2">
+                    <i class="fa-solid fa-shield-halved text-5xl text-amber-400 animate-pulse"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-black gold-gradient-text">مرحباً بكم في التحدي الأكبر للخبراء</h2>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                    منصة تعليمية إلكترونية تفاعلية متقدمة، مخصصة لطلاب المرحلة الثانوية لقياس وإتقان مهارات التفكير والتحليل والاستنتاج التاريخي والجغرافي بالاعتماد الكامل على الوحدة الثالثة: (تاريخ الوطن العربي الحديث والمعاصر).
+                </p>
+
+                <!-- البيانات الرسمية -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-slate-800/60 p-4 rounded-xl border border-slate-700 text-xs md:text-sm">
+                    <div class="p-2 border-l border-slate-700">
+                        <span class="block text-slate-400">المدرسة</span>
+                        <strong class="text-amber-400">محمد بن راشد ح2 – ح3 بنين</strong>
+                    </div>
+                    <div class="p-2 border-l border-slate-700">
+                        <span class="block text-slate-400">إعداد ومصمم اللعبة</span>
+                        <strong class="text-amber-400">أ. رائد السقار</strong>
+                    </div>
+                    <div class="p-2">
+                        <span class="block text-slate-400">مدير المدرسة</span>
+                        <strong class="text-amber-400">أ. عبدالله علي عيسى</strong>
+                    </div>
+                </div>
+
+                <!-- إدخال بيانات الطالب -->
+                <div class="space-y-4 max-w-md mx-auto pt-4">
+                    <div>
+                        <label for="student-name" class="block text-right text-sm font-bold text-slate-200 mb-2">أدخل اسم الطالب الثلاثي للبدء:</label>
+                        <input type="text" id="student-name" placeholder="اسم الطالب كاملاً..." class="w-full bg-slate-800 border border-amber-500/50 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400 text-right font-bold placeholder-slate-500">
+                    </div>
+                    
+                    <div class="flex items-center justify-between bg-slate-800/80 p-3 rounded-xl border border-slate-700 text-xs text-slate-300">
+                        <span>تفعيل المؤقت الزمني (45 ثانية/سؤال)</span>
+                        <input type="checkbox" id="timer-toggle" checked class="w-5 h-5 accent-amber-500 rounded cursor-pointer">
+                    </div>
+
+                    <button onclick="startGame()" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black text-lg py-4 px-8 rounded-xl shadow-lg transform transition active:scale-95 flex items-center justify-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-play"></i>
+                        <span>انطلق لـ خوض التحدي (50 سؤالاً)</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- واجهة اللعبة والأسئلة -->
+        <section id="game-screen" class="hidden space-y-6">
+            
+            <!-- شريط الحالة والمعلومات العلوية -->
+            <div class="bg-slate-900/90 rounded-xl p-4 border border-slate-700 shadow-xl flex flex-wrap justify-between items-center gap-4">
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 px-3 py-1 rounded-lg text-xs font-bold" id="current-stage-badge">المرحلة 1: اختبار الانطلاق</span>
+                    <span class="text-slate-300 text-sm font-bold" id="question-counter">السؤال 1 من 50</span>
+                </div>
+
+                <!-- شريط التقدم -->
+                <div class="w-full md:w-1/3 bg-slate-800 rounded-full h-3 border border-slate-700 overflow-hidden">
+                    <div id="progress-bar" class="bg-gradient-to-r from-amber-500 to-emerald-500 h-full w-0 transition-all duration-300"></div>
+                </div>
+
+                <!-- النقاط والمؤقت -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <div class="flex items-center space-x-1 space-x-reverse text-emerald-400 font-extrabold text-base bg-emerald-950/50 px-3 py-1 rounded-lg border border-emerald-800">
+                        <i class="fa-solid fa-star"></i>
+                        <span id="score-display">0</span>
+                    </div>
+                    <div id="streak-container" class="hidden flex items-center space-x-1 space-x-reverse text-amber-400 font-extrabold text-xs bg-amber-950/50 px-2 py-1 rounded-lg border border-amber-800">
+                        <i class="fa-solid fa-fire text-amber-500"></i>
+                        <span id="streak-display">0</span>
+                    </div>
+                    <div id="timer-box" class="flex items-center space-x-1 space-x-reverse text-red-400 font-extrabold text-base bg-red-950/50 px-3 py-1 rounded-lg border border-red-800">
+                        <i class="fa-solid fa-clock"></i>
+                        <span id="timer-display">45</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الوسائل المساعدة -->
+            <div class="flex justify-center items-center space-x-3 space-x-reverse">
+                <button id="help-5050" onclick="useHelp5050()" class="bg-slate-800 hover:bg-slate-700 border border-amber-500/40 text-amber-400 px-4 py-2 rounded-xl text-xs md:text-sm font-bold flex items-center space-x-2 space-x-reverse transition disabled:opacity-40">
+                    <i class="fa-solid fa-ban"></i>
+                    <span>حذف خيارين (50:50)</span>
+                </button>
+                <button id="help-hint" onclick="useHelpHint()" class="bg-slate-800 hover:bg-slate-700 border border-amber-500/40 text-amber-400 px-4 py-2 rounded-xl text-xs md:text-sm font-bold flex items-center space-x-2 space-x-reverse transition disabled:opacity-40">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>تلميح تحليلي</span>
+                </button>
+                <button id="help-time" onclick="useHelpTime()" class="bg-slate-800 hover:bg-slate-700 border border-amber-500/40 text-amber-400 px-4 py-2 rounded-xl text-xs md:text-sm font-bold flex items-center space-x-2 space-x-reverse transition disabled:opacity-40">
+                    <i class="fa-solid fa-hourglass-plus"></i>
+                    <span>+15 ثانية</span>
+                </button>
+            </div>
+
+            <!-- منطقة السؤال والمادة المصدرية -->
+            <div class="bg-slate-900/90 rounded-2xl p-6 border border-slate-700 shadow-2xl space-y-6">
+                
+                <!-- رأس السؤال وتحديد المهارة -->
+                <div class="flex flex-wrap justify-between items-center border-b border-slate-800 pb-3 gap-2">
+                    <span id="challenge-type-badge" class="bg-maroon-900/80 text-amber-300 border border-amber-500/40 text-xs px-3 py-1 rounded-full font-bold">
+                        <i class="fa-solid fa-magnifying-glass ml-1"></i> تحدي المحقق التاريخي
+                    </span>
+                    <span id="skill-type-badge" class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full border border-slate-700 font-semibold">
+                        المهارة: قراءة النصوص والأشكال وتحليلها
+                    </span>
+                </div>
+
+                <!-- المادة المصدرية التأسيسية للسؤال -->
+                <div class="bg-slate-950/80 rounded-xl p-4 md:p-5 border border-slate-800">
+                    <div class="text-xs font-bold text-amber-400 mb-2 flex items-center">
+                        <i class="fa-solid fa-folder-open ml-2"></i> المادة المصدرية المرفقة للتحليل والاستنتاج:
+                    </div>
+                    <div id="source-material-container" class="text-slate-200 text-sm leading-relaxed max-h-60 overflow-y-auto custom-scrollbar p-2">
+                        <!-- يتم تحميل النص/الجدول/الخريطة ديناميكياً -->
+                    </div>
+                </div>
+
+                <!-- نص السؤال -->
+                <div class="text-lg md:text-xl font-bold text-white text-right leading-snug" id="question-text">
+                    <!-- نص السؤال -->
+                </div>
+
+                <!-- خيارات الإجابة الأربعة -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="options-container">
+                    <!-- يتم توليد الأزرار ديناميكياً -->
+                </div>
+
+                <!-- التغذية الراجعة والتفسير (مخفية البداية) -->
+                <div id="feedback-container" class="hidden bg-slate-950 border rounded-xl p-5 space-y-3 transition-all duration-300">
+                    <div id="feedback-title" class="font-extrabold text-base flex items-center"></div>
+                    <div id="feedback-reason" class="text-sm text-slate-300 leading-relaxed"></div>
+                    <div id="feedback-skill-advice" class="text-xs text-amber-300/90 bg-amber-950/40 p-3 rounded-lg border border-amber-800/40"></div>
+                    <button onclick="nextQuestion()" class="mt-3 w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-black py-3 rounded-xl shadow transition flex items-center justify-center space-x-2 space-x-reverse">
+                        <span>الانتقال للسؤال التالي</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- واجهة النتائج والتحليل والشهادة -->
+        <section id="results-screen" class="hidden space-y-8">
+            <div class="bg-slate-900/90 rounded-2xl p-6 md:p-10 border border-amber-500/40 shadow-2xl space-y-8">
+                
+                <!-- رأس النتيجة -->
+                <div class="text-center space-y-3 border-b border-slate-800 pb-6">
+                    <i class="fa-solid fa-trophy text-6xl text-amber-400 animate-bounce"></i>
+                    <h2 class="text-3xl md:text-4xl font-black gold-gradient-text">تقرير الإنجاز ولوحة الخبراء</h2>
+                    <p class="text-slate-300 text-base" id="result-student-name">الطالب: -</p>
+                </div>
+
+                <!-- كروت الإحصائيات -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 text-center">
+                        <span class="block text-xs text-slate-400">النقاط الكلية</span>
+                        <span id="final-score" class="text-2xl font-black text-amber-400">0</span>
+                    </div>
+                    <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 text-center">
+                        <span class="block text-xs text-slate-400">نسبة الإنجاز</span>
+                        <span id="final-percentage" class="text-2xl font-black text-emerald-400">0%</span>
+                    </div>
+                    <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 text-center">
+                        <span class="block text-xs text-slate-400">إجابات صحيحة / خاطئة</span>
+                        <span id="final-correct-wrong" class="text-lg font-bold text-slate-200">0 / 0</span>
+                    </div>
+                    <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 text-center">
+                        <span class="block text-xs text-slate-400">التقييم العام</span>
+                        <span id="final-level" class="text-sm font-black text-amber-300">-</span>
+                    </div>
+                </div>
+
+                <!-- تحليل المهارات الثمانية -->
+                <div class="bg-slate-950/80 p-6 rounded-xl border border-slate-800 space-y-4">
+                    <h3 class="text-lg font-bold text-amber-400 border-b border-slate-800 pb-2">
+                        <i class="fa-solid fa-chart-pie ml-2"></i> تحليل أداء المهارات الثماني للدراسات الاجتماعية:
+                    </h3>
+                    <div id="skills-breakdown" class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <!-- توليد مؤشرات المهارات تلقائياً -->
+                    </div>
+                </div>
+
+                <!-- الأزرار التفاعلية -->
+                <div class="flex flex-wrap justify-center gap-4 pt-4">
+                    <button onclick="printCertificate()" class="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition flex items-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>عرض وطباعة شهادة الإنجاز PDF</span>
+                    </button>
+                    <button onclick="restartGame()" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-bold py-3 px-6 rounded-xl transition flex items-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-rotate-right"></i>
+                        <span>إعادة التحدي مرة أخرى</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- شهادة الإنجاز الفاخرة المخصصة للطباعة -->
+            <div id="printable-certificate" class="hidden bg-white text-slate-900 p-8 rounded-2xl certificate-border shadow-2xl relative max-w-4xl mx-auto my-6 text-center space-y-6">
+                <!-- الإطار الزخرفي الذهبي والرسمي -->
+                <div class="flex justify-between items-center border-b-2 border-amber-600 pb-4">
+                    <div class="text-right text-xs">
+                        <p class="font-bold text-emerald-900">دولة الإمارات العربية المتحدة</p>
+                        <p class="font-bold text-slate-700">مؤسسة المدرّسة التعليمية - دبي</p>
+                        <p class="font-bold text-amber-800">مدرسة محمد بن راشد ح2 – ح3 بنين</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fa-solid fa-award text-5xl text-amber-600"></i>
+                    </div>
+                    <div class="text-left text-xs">
+                        <p class="font-bold text-slate-700">التاريخ: <span id="cert-date">-</span></p>
+                        <p class="font-bold text-slate-700">رقم التوثيق: <span id="cert-code">MBR-2026-99</span></p>
+                    </div>
+                </div>
+
+                <!-- عنوان الشهادة -->
+                <div class="space-y-2">
+                    <h2 class="font-amiri text-4xl font-bold text-amber-900">شهادة إنجاز وتفوق</h2>
+                    <p class="text-sm font-semibold text-slate-600">في مهارات التفكير والتحليل للدراسات الاجتماعية</p>
+                </div>
+
+                <!-- نص التقدير الرسمي -->
+                <div class="py-4 space-y-4 max-w-2xl mx-auto">
+                    <p class="text-base text-slate-800 leading-relaxed">
+                        تتقدم <strong class="text-emerald-900">مدرسة محمد بن راشد ح2 – ح3 بنين – دبي</strong> بمنح هذه الشهادة تقديرًا للطالب:
+                    </p>
+                    <div class="text-3xl font-black font-amiri text-amber-800 border-b-2 border-dashed border-amber-400 inline-block px-8 py-1" id="cert-student-name">
+                        [اسم الطالب]
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed pt-2">
+                        على اجتيازه تحديات مهارات الدراسات الاجتماعية وإظهار قدرات متميزة في التحليل والاستنتاج والتفكير الناقد في المسابقة الوطنية الإلكترونية: 
+                        <strong class="text-amber-900">«التحدي الأكبر – خبراء الدراسات الاجتماعية»</strong>.
+                    </p>
+                </div>
+
+                <!-- بيانات النتيجة والأداء -->
+                <div class="grid grid-cols-3 gap-2 bg-amber-50 p-3 rounded-lg border border-amber-200 text-xs font-bold text-slate-800 max-w-lg mx-auto">
+                    <div>النسبة المئوية: <span id="cert-percent" class="text-emerald-800">0%</span></div>
+                    <div>المستوى: <span id="cert-level" class="text-amber-800 font-black">-</span></div>
+                    <div>الدرجة الكلية: <span id="cert-score" class="text-maroon-800">0</span></div>
+                </div>
+
+                <!-- التوقيعات الرسمية -->
+                <div class="grid grid-cols-2 gap-8 pt-8 border-t border-slate-300 text-xs">
+                    <div class="text-center space-y-1">
+                        <p class="text-slate-500 font-semibold">مدرس الدراسات الاجتماعية ومصمم اللعبة</p>
+                        <p class="text-base font-bold text-slate-900 font-amiri">رائد السقار</p>
+                        <p class="text-amber-700 italic text-xs">[ التوقيع الإلكتروني المعتمد ]</p>
+                    </div>
+                    <div class="text-center space-y-1">
+                        <p class="text-slate-500 font-semibold">مدير المدرسة</p>
+                        <p class="text-base font-bold text-slate-900 font-amiri">عبدالله علي عيسى</p>
+                        <p class="text-amber-700 italic text-xs">[ التوقيع والإختمام الرسمي ]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- الفوتر السفلي -->
+    <footer class="bg-navy-900 border-t border-slate-800 py-4 text-center text-xs text-slate-400">
+        <div class="container mx-auto px-4 space-y-1">
+            <p>جميع الحقوق محفوظة © مدرسة محمد بن راشد ح2 – ح3 بنين – دبي</p>
+            <p>إعداد وتصميم: <span class="text-amber-400 font-bold">أ. رائد السقار</span> | مدرس الدراسات الاجتماعية</p>
+        </div>
+    </footer>
+
+    <!-- سكريبت بنك الأسئلة والمنطق البرمجي -->
+    <script>
+        // بنك الأسئلة الـ 50 الكامل من المادة المرفقة
+        const questionsBank = [
+            // ==================== المرحلة الأولى: اختبار الانطلاق (1-10) ====================
+            {
+                id: 1,
+                stage: 1,
+                stageTitle: "المرحلة الأولى: اختبار الانطلاق",
+                skillId: 1,
+                skillName: "قراءة النصوص والأشكال وتحليلها واستنتاج الحقائق",
+                challengeType: "تحدي المحقق التاريخي",
+                sourceMaterial: `<strong>نص تاريخي حول نشأة الدولة العثمانية:</strong><br>"ينتسب العثمانيون إلى إحدى قبائل الغُزّ التركية، ومنشؤها بلاد التركستان. اتجه زعيمهم سليمان نحو آسيا الصغرى وقتل عند مشارف حلب. خلفه ابنه أرطغرل الذي التحق بخدمة الأمير السلجوقي علاء الدين وساعده في حربه مع البيزنطيين، فكافأه بمنحه إمارة 'إسكي شهير' وشعار الهلال."`,
+                question: "بناءً على النص التاريخي أعلاه، ما السبب المباشر الذي مكن أرطغرل من الحصول على إمارة إسكي شهير وحكمها؟",
+                options: [
+                    "أ) انتسابه القبلي إلى قبائل الغُزّ المرموقة في تركستان.",
+                    "ب) الدعم العسكري الكبير الذي قدمه للأمير السلجوقي ضد البيزنطيين.",
+                    "ج) استيلاؤه المباشر بالقوة على أراضي بيزنطة ومشارف حلب.",
+                    "د) مقتل والده سليمان بالقرب من حدود الشام."
+                ],
+                correctAnswer: 1, // B
+                explanation: "السبب المباشر والواضح في النص هو تقديم أرطغرل المساعدة العسكرية للأمير السلجوقي علاء الدين في حربه ضد البيزنطيين، فكافأه بإقطاعه إمارة إسكي شهير.",
+                distractorAnalysis: "البديل (أ) و(د) حقائق تاريخية مذكورة لكنها ليست سبباً المكافأة. البديل (ج) خلط غير صحيح للوقائع."
+            },
+            {
+                id: 2,
+                stage: 1,
+                stageTitle: "المرحلة الأولى: اختبار الانطلاق",
+                skillId: 2,
+                skillName: "تحديد الفكرة الرئيسة للنص",
+                challengeType: "تحدي الفكرة الخفية",
+                sourceMaterial: `<strong>نص حول أحوال الوطن العربي قبيل التوسع العثماني:</strong><br>"اتجه العثمانيون نحو الوطن العربي بسبب تدهور أوضاعه: تجزئته إلى دويلات متناحرة، انهيار اقتصادياته بسبب الحروب الصليبية وغارات المغول، تحول طرق التجارة البحرية عنه بعد حركة الكشوف الجغرافية، وتعرض أجزائه للغزو البرتغالي والإسباني ووقوعه تحت النفوذ الصفوي."`,
+                question: "ما الفكرة الرئيسة الشاملة التي يعالجها النص أعلاه؟",
+                options: [
+                    "أ) دور الكشوف الجغرافية في تدمير التجارة البحرية العربية فقط.",
+                    "ب) العوامل المتعددة (السياسية والاقتصادية والسيادية) التي أضعفت الوطن العربي وهيأت لضمه العثماني.",
+                    "ج) الصراع العسكري بين الدولة الصفوية ودولة المماليك في الشام.",
+                    "د) التاريخ العسكري للغارات المغولية والحروب الصليبية على مصر."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الفكرة الرئيسة هي استعراض المنظومة المتكاملة للعوامل الداخلية والخارجية التي أدّت لضعف الوطن العربي ومهّدت للسيطرة العثمانية.",
+                distractorAnalysis: "الخيارات أ، ج، د هي جزئيات وتفاصيل فرعية وليست الفكرة الجامعة للنص."
+            },
+            {
+                id: 3,
+                stage: 1,
+                stageTitle: "المرحلة الأولى: اختبار الانطلاق",
+                skillId: 3,
+                skillName: "تحديد معاني الكلمات والعبارات والمصطلحات المتخصصة",
+                challengeType: "تحدي خبير المصطلحات",
+                sourceMaterial: `<strong>سياق مصطلح (الإنكشارية):</strong><br>"بعد وفاة أورخان سنة 1326م، ضم مدينة بورصة، وفي عهده تم تكوين أول فرقة من طوائف الانكشارية، وهي تحوير لكلمتي (يني تشرى) التركيتين، وتعنيان الفرق الجديدة لتمييزها عن الفرق العسكرية القديمة المؤلفة من الجنود الإقطاعيين."`,
+                question: "ما المعنى الدقيق والمقصود بمصطلح 'الانكشارية' كما ورد في السياق التاريخي لبناء الجيش العثماني؟",
+                options: [
+                    "أ) الجنود الإقطاعيون الذين يمتلكون أراضٍ زراعية في آسيا الصغرى.",
+                    "ب) فرقة عسكرية نظامية جديدة تم تأسيسها لتكون مشاة مأجورين بدلاء عن الجيش الإقطاعي القديم.",
+                    "ج) قادة أسطول البحرية العثمانية في البحر الأسود.",
+                    "د) الفرقة المسؤولة عن جمع الضرائب المالية من الولايات."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الانكشارية تعني 'الجيش الجديد' أو 'الفرقة الجديدة' التي استحدثت لتكون قوة عسكرية دائمة ومختلفة عن الجنود الإقطاعيين القدامى.",
+                distractorAnalysis: "الخيارات الأخرى تعبر عن مهام إقطاعية أو بحرية أو مالية لا علاقة لها بالدلالة اللغوية والتاريخية للمصطلح."
+            },
+            {
+                id: 4,
+                stage: 1,
+                stageTitle: "المرحلة الأولى: اختبار الانطلاق",
+                skillId: 4,
+                skillName: "إعداد المخططات الذهنية لأفكار النص والعلاقات",
+                challengeType: "تحدي مهندس المعرفة",
+                sourceMaterial: `<strong>مخطط التوسع العثماني المبكر:</strong><br>[عثمان بن أرطغرل: تأسيس الإمارة والاستقلال] ➔ [أورخان: ضم بورصة وتأسيس الانكشارية] ➔ [مراد الأول: فتح أدرنة وضم البلقان] ➔ [بايزيد الأول: هزيمة الأوروبيين في نيقوبولس].`,
+                question: "في ضوء المخطط الذهني لتطور السلطة العثمانية، ما العلاقة المنطقية بين خطوة مراد الأول وخطوة بايزيد الأول؟",
+                options: [
+                    "أ) تثبيت مراد الأول للوجود العثماني في البلقان مهّد لمواجهة بايزيد الأول للتحالف الأوروبي في نيقوبولس.",
+                    "ب) نقل بايزيد الأول العاصمة إلى بورصة بعد وفاة مراد الأول.",
+                    "ج) تراجع نفوذ العثمانيين في أوروبا ودخولهم في حلف مع التحالف الأوروبي.",
+                    "د) توقف التوسع في أوروبا والاتجاه المباشر لنقل السفن برّاً."
+                ],
+                correctAnswer: 0, // A
+                explanation: "استيلاء مراد الأول على أدرنة وضم البلقان وضع الدولة العثمانية على تماس مباشر مع التحالفات الأوروبية، مما أدّى لمواجهة بايزيد الأول لهم في نيقوبولس.",
+                distractorAnalysis: "ب، ج، د تعبر عن استنتاجات خاطئة تاريخياً ومناقضة للمخطط."
+            },
+            {
+                id: 5,
+                stage: 1,
+                stageTitle: "المرحلة الأولى: اختبار الانطلاق",
+                skillId: 5,
+                skillName: "الاستنتاج من الخرائط والجداول والبيانات",
+                challengeType: "تحدي محلل البيانات",
+                sourceMaterial: `<strong>جدول معارك التوسع العثماني في البلاد العربية:</strong><br>
+                <table class="w-full text-center border-collapse border border-slate-700 text-xs mt-2">
+                <tr class="bg-slate-800 text-amber-400"><th>المعركة</th><th>التاريخ</th><th>الأطراف</th><th>النتيجة</th></tr>
+                <tr><td>جالديران</td><td>1514م</td><td>العثمانيون × الصفويون</td><td>انتصار العثمانيين ودخول تبريز مؤقتاً</td></tr>
+                <tr><td>مرج دابق</td><td>1516م</td><td>العثمانيون × المماليك</td><td>مقتل قانصوه الغوري وضم بلاد الشام</td></tr>
+                <tr><td>الريدانية</td><td>1517م</td><td>العثمانيون × المماليك</td><td>أسر طومان باي وسقوط دولة المماليك بمصر</td></tr>
+                </table>`,
+                question: "بالاستناد لبيانات الجدول، ما الاتجاه الاستراتيجي الأبرز لسياسة السلطان سليم الأول العسكرية بين عامي (1514 - 1517م)؟",
+                options: [
+                    "أ) التوسع نحو دول غرب أوروبا والوصول لأبواب فيينا.",
+                    "ب) القضاء على القوى الإسلامية المجاورة (الصفويين ثم المماليك) لتأمين الحدود الشرقية والجنوبية.",
+                    "ج) التحالف العسكري مع دولة المماليك لمواجهة الصفويين في تبريز.",
+                    "د) التركيز على الحملات البحرية في المحيط الهندي."
+                ],
+                correctAnswer: 1, // B
+                explanation: "يتضح من التسلسل الزمني والتتابع في الجدول أن سليم الأول وجه ضربات متتالية للصفويين ثم المماليك لإخضاع المشرق العربي والإسلامي.",
+                distractorAnalysis: "الخيارات الأخرى تعاكس البيانات الصريحة الواردة في الجدول."
+            },
+            {
+                id: 6,
+                stage: 1,
+                stageTitle: "المرحلة الأولى: اختبار الانطلاق",
+                skillId: 6,
+                skillName: "الاستشهاد بأدلة محددة من النص لدعم التحليلات",
+                challengeType: "تحدي شاهد الدليل",
+                sourceMaterial: `<strong>نص تفاصيل معركة مرج دابق 1516م:</strong><br>"نشبت الحرب بين العثمانيين والمماليك في مرج دابق شمالي حلب، وانتهت بانتصار سليم الأول ومقتل قانصوه الغوري. ويعزى انتصار العثمانيين إلى: 1. استخدام الأسلحة النارية وخاصة سلاح المدفعية. 2. انضمام بعض قادة المماليك إلى صفوف العثمانيين."`,
+                question: "أي الأدلة النصية التالية يُستشهد بها لإثبات أن الخيانة والتفوق التكنولوجي كانا الحاسِمَيْن في سقوط الشام؟",
+                options: [
+                    "أ) مقتل قانصوه الغوري في أرض المعركة شمالي حلب.",
+                    "ب) استخدام العثمانيين للمدفعية (سلاح ناري) وانحياز بعض قادة المماليك لخصمهم.",
+                    "ج) زحف المماليك لملاقاة العثمانيين خارج مصر.",
+                    "د) أسر السلطان طومان باي وتعيينه حاطاباً."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الدليل النصي المباشر المذكور يتضمن نقطتين: التطور التكنولوجي (المدفعية والأسلحة النارية) والانقسام الداخلي (انضمام قادة المماليك للعثمانيين).",
+                distractorAnalysis: "الخيارات الأخرى نتائج وليست أدلة على أسباب الحسم التكنولوجي والسياسي."
+            },
+            {
+                id: 7,
+                stage: 1,
+                stageTitle: "المرحلة الأولى: اختبار الانطلاق",
+                skillId: 7,
+                skillName: "تقييم المصادر الموثوقة المناسبة للإجابة",
+                challengeType: "تحدي خبير المصادر",
+                sourceMaterial: `<strong>مقتطفات مصادر حول فتح القسطنطينية 1453م:</strong><br>
+                المصدر (أ): "مذكرات مؤرخ بيزنطي عاصر الحصار ووصف نقل السفن العثمانية برّاً فوق الخشب المدهون بالدهن إلى القرن الذهبي."<br>
+                المصدر (ب): "مقالة مدونة حديثة على شبكة الإنترنت كُتبت عام 2022 دون إحالات مرجعية."`,
+                question: "إذا كنت باحثاً تاريخياً تدرس التكتيك العسكري للأسطول العثماني في القسطنطينية، لماذا يفضل تقييم المصدر (أ) كـ مصدر أولي أكثر موثوقية؟",
+                options: [
+                    "أ) لأنه مكتوب باللغة العربية الحديثة وسهل القراءة.",
+                    "ب) لأنه مصدر معاصر للحدث كتبه شاهد عيان رصد الواقعة العسكرية المباشرة بدقة.",
+                    "ج) لأن المصدر (ب) يحتوي على صور وتصاميم حديثة.",
+                    "د) لأن المذكرات البيزنطية تنحاز دائماً للعثمانيين."
+                ],
+                correctAnswer: 1, // B
+                explanation: "المصدر الأولي المعاصر للحدث (شاهد العيان) يقدم شهادة مباشرة توثق التكتيكات العسكرية بدقة تفوق المصادر الثانوية الحديثة غير الموثقة.",
+                distractorAnalysis: "أ، ج، د استنتاجات خاطئة في قواعد نقد ومصداقية المصادر التاريخية."
+            },
+            {
+                id: 8,
+                stage: 1,
+                stageTitle: "المرحلة الأولى: اختبار الانطلاق",
+                skillId: 8,
+                skillName: "تلخيص كيفية تطور الوقائع والأفكار الرئيسة",
+                challengeType: "تحدي التسلسل الزمني",
+                sourceMaterial: `<strong>نص التطور التاريخي للدولة الصفوية والعثمانية:</strong><br>"عاصرت الدولة العثمانية دولتين إسلاميتين: الدولة الصفوية وعاصمتها تبريز وتحكم إيران والعراق، ودولة المماليك وعاصمتها القاهرة. اندلعت الحرب بين سليم الأول والصفويين بسبب لجوء المعارضين له لفارس ومحاولة نشر المذهب الشيعي بالأناضول، فحقق النصر بجالديران 1514م."`,
+                question: "كيف تطورت الأحداث السياسية التي دفعت العثمانيين لتغيير اتجاه فتوحاتهم من أوروبا نحو المشرق الإسلامي؟",
+                options: [
+                    "أ) بسب تحالف الصفويين مع البيزنطيين لفتح القسطنطينية.",
+                    "ب) نتيجة التهديد الصفوي العقائدي والسياسي على أطراف الأناضول ولجوء الفارين للعاصمة تبريز.",
+                    "ج) بسبب سقوط أدرنة في يد المماليك عام 1514م.",
+                    "د) لرغبة العثمانيين في اكتشاف طريق رأس الرجاء الصالح."
+                ],
+                correctAnswer: 1, // B
+                explanation: "تطور الأحداث بدأ بالخطر الصفوي والمنافسة العقائدية والسياسية على حدود الأناضول، مما أجبر سليم الأول على إيقاف الزحف الغربي والتوجّه شرقاً.",
+                distractorAnalysis: "الخيارات الأخرى تحتوي أحداثاً غير صحيحة ومخالفة للتسلسل التاريخي."
+            },
+            {
+                id: 9,
+                stage: 1,
+                stageTitle: "المرحلة الأولى: اختبار الانطلاق",
+                skillId: 1,
+                skillName: "قراءة النصوص والأشكال وتحليلها واستنتاج الحقائق",
+                challengeType: "تحدي المحقق التاريخي",
+                sourceMaterial: `<strong>نص استيلاء العثمانيين على الحجاز واليمن:</strong><br>"كان الحجاز جزءاً من دولة المماليك، ولما رأى شريف مكة انهيار دولتهم أرسل مفاتيح الكعبة المشرفة إلى السلطان سليم الأول عام 1517م معلناً ولاءه. وأرسل سليمان القانوني أسطولاً إلى عدن 1538م، وبحلول 1551م أصبح اليمن تابعاً للعثمانيين."`,
+                question: "استنتج السبب الأساسي الذي جعل شريف مكة يبادر بإرسال مفاتيح الكعبة لسليم الأول عام 1517م دون خوض مواجهة عسكرية؟",
+                options: [
+                    "أ) تعرض الحجاز لهجوم مباشر من الأسطول البرتغالي.",
+                    "ب) إدراكه الانهيار التام لدولة المماليك الحامية السابقة ورغبته في الحفاظ على المكانة الدينية وحماية الحجاز تحت القوة العثمانية الصاعدة.",
+                    "ج) رغبته في التنازل عن حكم الحجاز والازدحام في القاهرة.",
+                    "د) صدور فرمان سلطاني بإعدام حكام شبه الجزيرة العربية."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الاستنتاج الواقعي هو قراءة الشريف للمشهد السياسي بعد هزيمة المماليك في الريدانية وسقوط دولتهم، ففضل نقل الولاء سلمياً للقوة العثمانية الفائزة.",
+                distractorAnalysis: "الخيارات أ، ج، د تعاكس الفهم السياسي والواقع التاريخي المذكور بالنص."
+            },
+            {
+                id: 10,
+                stage: 1,
+                stageTitle: "المرحلة الأولى: اختبار الانطلاق",
+                skillId: 3,
+                skillName: "تحديد معاني الكلمات والعبارات والمصطلحات المتخصصة",
+                challengeType: "تحدي خبير المصطلحات",
+                sourceMaterial: `<strong>نص حول حركات الكشوف الجغرافية:</strong><br>"ضعفت دولة المماليك بسبب تدهور الأحوال الاقتصادية نتيجة تحول طرق التجارة البحرية عنها بعد اكتشاف طريق رأس الرجاء الصالح من قبل البرتغاليين وتجاوز الأراضي العربية."`,
+                question: "ما الأثر الاقتصادي المباشر والمقصود بعبارة 'تحول طرق التجارة البحرية'؟",
+                options: [
+                    "أ) زيادة الإيرادات المالية التي تحصل عليها الموانئ المصرية والشامية.",
+                    "ب) فقدان المماليك للرسوم والمكوس الجمركية التي كانت تفرض على البضائع المارة عبر البحر الأحمر والمشرق العربي.",
+                    "ج) ازدهار حركة الأسواق في مدينتي حلب والقاهرة.",
+                    "د) سيطرة العثمانيين على موانئ البحر المتوسط مجاناً."
+                ],
+                correctAnswer: 1, // B
+                explanation: "تحول الطرق التجارية تعني دوران السفن حول أفريقيا، مما حرم الخزانة المملوكية من مصدر دخلها الأساسي المتثمل في الضرائب والرسوم الجمركية.",
+                distractorAnalysis: "أ، ج، د نتائج تتناقض كلياً مع المضمون الاقتصادي للمصطلح."
+            },
+
+            // ==================== المرحلة الثانية: محللو المعلومات (11-20) ====================
+            {
+                id: 11,
+                stage: 2,
+                stageTitle: "المرحلة الثانية: محللو المعلومات",
+                skillId: 1,
+                skillName: "قراءة النصوص والأشكال وتحليلها واستنتاج الحقائق",
+                challengeType: "تحدي المحقق التاريخي",
+                sourceMaterial: `<strong>نص حول سياسة التجهيل ومنع الطباعة:</strong><br>"أصدر السلطان العثماني فرَماناً يقضي بتحريم وتجريم من ينشئ مطابع في أراضي الدولة العثمانية بناءً على فتوى مشيخة الإسلام، وعاقبوا بالإعدام من فعل ذلك. وبذلك حرمت الطباعة على العرب والمسلمين لثلاثة قرون."`,
+                question: "ما الحقيقة الفكرية التي تستنتجها من تحريم العثمانيين للطباعة باللغة العربية والإسلامية على مدار ثلاثة قرون؟",
+                options: [
+                    "أ) الحرص العثماني على تشجيع حفظ النصوص وتنشيط حركة كتابة المصاحف باليد.",
+                    "ب) فرض حالة من العزلة والجمود الفكري والجريمة بحق العقل العربي لمنع التجديد والابتكار ومواكبة النهضة.",
+                    "ج) عدم توفر الأوراق والمهارات الفنية لدى سكان الولايات العربية.",
+                    "د) تشجيع انتشار العلوم الحديثة باللغات الأجنبية."
+                ],
+                correctAnswer: 1, // B
+                explanation: "التحليل العميق يبين أن منع الطباعة كان سياسة ممنهجة لإبقاء الشعوب العربية في حالة تجهيل وجمود فكري يسهل معها السيطرة والحكم.",
+                distractorAnalysis: "أ، ج، د مبررات واهية لا تتطابق مع التحليل التاريخي الناقد الوارد بالكتاب."
+            },
+            {
+                id: 12,
+                stage: 2,
+                stageTitle: "المرحلة الثانية: محللو المعلومات",
+                skillId: 3,
+                skillName: "تحديد معاني الكلمات والعبارات والمصطلحات المتخصصة",
+                challengeType: "تحدي خبير المصطلحات",
+                sourceMaterial: `<strong>سياق مصطلح (نظام الالتزام):</strong><br>"أدى نظام جباية الضرائب (الالتزام) بتحويل كثير من القرى العربية إلى مزارع ضرائب. وسعت الحكومة بإسطنبول لبيع حق جباية الضرائب لطول حياة متعهد الجباية، فتصرف المتعهدون كأنها إقطاعيات خاصة ورثوها لأبنائهم، مما أدى لهجر المزارعين لأراضيهم."`,
+                question: "ما التعريف الدقيق لـ 'نظام الالتزام' كما جرى تطبيقه في الولايات العربية إبان الحكم العثماني؟",
+                options: [
+                    "أ) نظام تعهد بموجبه أفراد متنفذون بجباية ضرائب أقاليم معينة لحساب الدولة مقابل الاستحواذ على الأرض واستغلال الفلاحين.",
+                    "ب) التزام الأخلاق الإسلامية في تقديم الهدايا والبقشيش للمحاكم والقضاة.",
+                    "ج) تعهد المزارعين بتطوير وسائل الري مجاناً لصالح السلطان العثماني.",
+                    "د) التزام الشباب بالخدمة العسكرية الإلزامية في حروب البلقان."
+                ],
+                correctAnswer: 0, // A
+                explanation: "نظام الالتزام هو عقد بموجبه يضمن متعهد الضرائب (الملتزم) دفع مبلغ محدد للمالية العثمانية، مقابل إطلاق يده في جمع أضعافه قسراً من الفلاحين.",
+                distractorAnalysis: "الخيارات ب، ج، د خلط بين الالتزام ومصطلحات القضاء أو التجنيد (سفر برليك)."
+            },
+            {
+                id: 13,
+                stage: 2,
+                stageTitle: "المرحلة الثانية: محللو المعلومات",
+                skillId: 3,
+                skillName: "تحديد معاني الكلمات والعبارات والمصطلحات المتخصصة",
+                challengeType: "تحدي خبير المصطلحات",
+                sourceMaterial: `<strong>سياق مصطلح (سياسة التتريك):</strong><br>"انتهج الأتراك العثمانيون سياسة التتريك محاولة منهم لطمس الهوية العربية واعتبار الجنس التركي يسمو على بقية الأجناس البشرية، ولم يشركوا العرب في حكم بلادهم، وعملوا على فرض اللغة التركية في التعليم والإدارة."`,
+                question: "ما المعنى المنطقي والاستراتيجي لمصطلح 'التتريك' في الفكر السياسي العثماني المتأخر؟",
+                options: [
+                    "أ) تبادل الخبرات الثقافية والتاريخية بمرونة بين العرب والأتراك.",
+                    "ب) عملية فرض الثقافة واللغة التركية بالقوة وطمس الهوية واللسان العربي واستبعاد السكان من إدارة مؤسساتهم.",
+                    "ج) منح الولايات العربية الاستقلال الذاتي شريطة فتح المدارس.",
+                    "د) تعليم اللغة العربية لجميع جنود الجيش العثماني في إسطنبول."
+                ],
+                correctAnswer: 1, // B
+                explanation: "التتريك هو هيمنة عنصرية وثقافية تهدف إلى تذويب الشخصية العربية وإحلال اللغة والسيادة التركية محلها.",
+                distractorAnalysis: "أ، ج، د تفاسير تتعارض كلياً مع تعريف التتريك وأهدافه الاستعمارية."
+            },
+            {
+                id: 14,
+                stage: 2,
+                stageTitle: "المرحلة الثانية: محللو المعلومات",
+                skillId: 2,
+                skillName: "تحديد الفكرة الرئيسة للنص",
+                challengeType: "تحدي الفكرة الخفية",
+                sourceMaterial: `<strong>نص حول فساد النظام القضائي العثماني:</strong><br>"نادراً ما كانت العدالة حرة، ولم تكن نزاهة القاضي مضمونة سواء أكان محلياً أم معيناً من إسطنبول، خصوصاً إذا كانت الهدايا (البقشيش) المقدمة من المتقاضين سخية، فقد تفشت الرشوة في المناصب العليا وتحمل السكان سوء الحكم."`,
+                question: "حدد الفكرة المحورية المشتقة من الفقرة أعلاه والمتعلقة بالسلطة القضائية العثمانية؟",
+                options: [
+                    "أ) تفوق النظام القضائي العثماني في تحقيق المساواة بين كافة الرعايا.",
+                    "ب) انهيار النزاهة القضائية وتفشي الرشوة والمحسوبية مما جرد الرعايا العرب من الحماية والعدالة.",
+                    "ج) تنظيم المهن القضائية وتأهيل القضاة المحليين في الأناضول.",
+                    "د) إلغاء نظام البقشيش وتجريم الهدايا من قبل مشيخة الإسلام."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الفكرة الرئيسة هي غياب العدالة وتفشي الفساد المالي (البقشيش والرشوة) في جهاز القضاء العثماني.",
+                distractorAnalysis: "الخيارات أ، ج، د ادعاءات تناقض الصريح المعروض في المصدر التاريخي."
+            },
+            {
+                id: 15,
+                stage: 2,
+                stageTitle: "المرحلة الثانية: محللو المعلومات",
+                skillId: 4,
+                skillName: "إعداد المخططات الذهنية لأفكار النص والعلاقات",
+                challengeType: "تحدي مهندس المعرفة",
+                sourceMaterial: `<strong>مخطط التدهور الزراعي في ظل الالتزام:</strong><br>[زيادة ضرائب الالتزام ورشوة القضاة] ➔ [عجز الفلاحين العرب عن السداد وتوريث الأرض للملتزم] ➔ [هجر المزارعين للحقول وظهور السهول المهجورة] ➔ [تردي الريف وانخفاض الإنتاج الاقتصادي].`,
+                question: "بناءً على التتابع في المخطط الذهني، ما النتيجة المباشرة المترتبة على تحول حق جباية الضرائب إلى ملكية موروثة للملتزمين؟",
+                options: [
+                    "أ) ازدهار حركة الزراعة واستصلاح الأراضي المهجورة.",
+                    "ب) هرب الفلاحين وهجرهم للمزارع مما أحال القرى إلى أطلال وسهول مهجورة.",
+                    "ج) انخفاض الضرائب المفروضة على المحاصيل الشامية والعراقية.",
+                    "د) دعم الحكومة في إسطنبول للجمعيات الزراعية العربية."
+                ],
+                correctAnswer: 1, // B
+                explanation: "جشع الملتزمين وتصرفهم بالإقطاعيات كأملاك موروثة أدّى لضغط مالي لا يطاق، ففر الفلاحون وتحولت القرى إلى أطلال وهجرت الأراضي.",
+                distractorAnalysis: "الخيارات أ، ج، د تعاكس تماماً نتائج خطة التدهور الواردة بالمخطط."
+            },
+            {
+                id: 16,
+                stage: 2,
+                stageTitle: "المرحلة الثانية: محللو المعلومات",
+                skillId: 5,
+                skillName: "الاستنتاج من الخرائط والجداول والبيانات",
+                challengeType: "تحدي محلل البيانات",
+                sourceMaterial: `<strong>جدول المقارنة بين دور العرب الحضاري ودور الحكم العثماني:</strong><br>
+                <table class="w-full text-center border-collapse border border-slate-700 text-xs mt-2">
+                <tr class="bg-slate-800 text-amber-400"><th>المعيار</th><th>الحضارة العربية الإسلامية</th><th>فترة السيطرة العثمانية</th></tr>
+                <tr><td>العلم والثقافة</td><td>ترجمة، مطابع، ابتكار، نشر المعرفة (بغداد والقرطبة)</td><td>تحريم الطباعة 3 قرون، قتل العلماء، جمود فكري</td></tr>
+                <tr><td>الإدارة والمواطنة</td><td>مشاركة، عدالة، ازدهار اقتصادي وزراعي</td><td>استبداد، تتريك، نظام الالتزام، مصادرة الأراضي</td></tr>
+                </table>`,
+                question: "ما الاستنتاج المباشر الذي توضحه المقارنة الجدولية بين العصرين الذهبي العربي والعثماني؟",
+                options: [
+                    "أ) العثمانيون واصلوا مسيرة النهضة العلمية العربية بنفس الزخم.",
+                    "ب) الحكم العثماني أحدث قطيعة حضارية ونكوصاً فكرباً وإدارياً عطل الدور الحضاري للأمة العربية.",
+                    "ج) العلوم العربية شهدت تطوراً كبيراً في ظل التحريم السلطاني للمطابع.",
+                    "د) نظام الالتزام ساهم في نشر العدالة الاجتماعية بين كافة الطبقات."
+                ],
+                correctAnswer: 1, // B
+                explanation: "البيانات المقارنة تظهر تبايناً حاداً، حيث انتقل الوطن العربي من الازدهار العلمي والإداري الذاتي إلى التخلف والجمود في العهد العثماني.",
+                distractorAnalysis: "الخيارات أ، ج، د تتناقض كلياً مع أرقام وبيانات المقارنة."
+            },
+            {
+                id: 17,
+                stage: 2,
+                stageTitle: "المرحلة الثانية: محللو المعلومات",
+                skillId: 6,
+                skillName: "الاستشهاد بأدولة محددة من النص لدعم التحليلات",
+                challengeType: "تحدي شاهد الدليل",
+                sourceMaterial: `<strong>نص تقارير رحالة أوروبيين في القرن 18م:</strong><br>"شاع وصف السهول المهجورة وأطلال القرى في أدب الرحالة الأوروبيين الذين زاروا بلاد الشام والعراق خلال الحكم العثماني، لكي يبرزوا الفارق بين حاضر المنطقة المظلم وبين حضارتها المزدهرة قديماً."`,
+                question: "أي الشواهد النصية التالية يثبت الواقع الميداني للتدهور الاقتصادي والزراعي في ولايات الشام والعراق؟",
+                options: [
+                    "أ) تزايد أعداد المدارس والمستشفيات في أرياف حلب.",
+                    "ب) تدوينات أدب الرحالة الأوروبيين الشاهدة على انتشار القرى الخربة والسهول الزراعية المهجورة.",
+                    "ج) ارتفاع صادرات الحبوب الشامية نحو موانئ بريطانيا.",
+                    "د) إلغاء الفرمان السلطاني المتعلق بالضرائب."
+                ],
+                correctAnswer: 1, // B
+                explanation: "أدب الرحالة الأوروبيين وانطباعاتهم الميدانية الموثقة توفر الدليل النصي المادي على مشاهد الخراب والسهول المتروكة.",
+                distractorAnalysis: "الخيارات أ، ج، د مناقضة لشهاد الأدلة النصية الواردة."
+            },
+            {
+                id: 18,
+                stage: 2,
+                stageTitle: "المرحلة الثانية: محللو المعلومات",
+                skillId: 7,
+                skillName: "تقييم المصادر الموثوقة المناسبة للإجابة",
+                challengeType: "تحدي خبير المصادر",
+                sourceMaterial: `<strong>تقييم وثائق الفرمانات السلطانية:</strong><br>
+                وثيقة (1): نص الفرمان السلطاني الصادر من إسطنبول المعاقب بالإعدام لمن يدخل المطابع العربية.<br>
+                وثيقة (2): مقال رأي في مجلة حديثة تدعي أن منع الطباعة كان مجرد إشاعة أوروبية.`,
+                question: "عند التثبت من حقيقة موقف العثمانيين من حركة الطباعة، كيف تقيم القيمة التاريخية للوثيقة (1) مقارنة بالوثيقة (2)؟",
+                options: [
+                    "أ) الوثيقة (2) أكثر دقة لأنها صدرت في العصر الحديث.",
+                    "ب) الوثيقة (1) مصدر أولي قانوني ورسمي قاطع يعكس القرار السياسي المباشر الصادر من السلطة.",
+                    "ج) الوثيقتان تتساويان في القيمة التاريخية دون حاجة للتحقق.",
+                    "د) الوثيقة (1) مزورة لأن السلاطين لا يصدرون فرمان عقوبات."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الفرمان السلطاني المكتوب هو مصدر أولي قانوني رسمي لا يقبل الشك في توثيق السياسات الحكومية الصادرة في وقته.",
+                distractorAnalysis: "أ، ج، د تمثل أخطاء منهجية في تقييم ونقد المصادر الوثائقية."
+            },
+            {
+                id: 19,
+                stage: 2,
+                stageTitle: "المرحلة الثانية: محللو المعلومات",
+                skillId: 8,
+                skillName: "تلخيص كيفية تطور الوقائع والأفكار الرئيسة",
+                challengeType: "تحدي التسلسل الزمني",
+                sourceMaterial: `<strong>نص التنازل عن الأراضي العربية للأجانب:</strong><br>"بعد انصراف العثمانيين لجمع الأموال وإهمال الاصلاحات، بدأت النهضة الأوروبية تؤثر في العلاقات. وللحصول على مبررات التنازل، عقد العثمانيون معاهدات الامتيازات الأجنبية، فبدأت الدولة تتنازل عن الولايات لبريطانيا وفرنسا وإيطاليا وإسبانيا خلال القرن 19م."`,
+                question: "لخص السلسلة التاريخية التي أدت لضياع الولايات العربية وتسليمها للاستعمار الغربي في القرن التاسع عشر؟",
+                options: [
+                    "أ) الفتوحات العربية في الأندلس ➔ حلف الناتو ➔ الاستعمار الحديث.",
+                    "ب) الضعف العثماني وجمع الأموال ➔ منح الامتيازات للأجانب ➔ التنازل المتتالي عن الولايات للولايات الغربية.",
+                    "ج) فتح القسطنطينية ➔ بناء السكك الحديدية ➔ طرد الأسطول الفرنسي.",
+                    "د) معركة نيقوبولس ➔ سقوط بغداد ➔ معاهدة لوزان."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الملخص المتسلسل يبدأ بالضعف العثماني الداخلي والبحث عن المال، مروراً بورقة الامتيازات الأجنبية، وانتهاءً بتسليم الولايات العربية للدول الاستعمارية.",
+                distractorAnalysis: "الخيارات أ، ج، د تتضمن خلطاً تاريخياً لا يمت بعلاقة لتسلسل الفقرة."
+            },
+            {
+                id: 20,
+                stage: 2,
+                stageTitle: "المرحلة الثانية: محللو المعلومات",
+                skillId: 1,
+                skillName: "قراءة النصوص والأشكال وتحليلها واستنتاج الحقائق",
+                challengeType: "تحدي المحقق التاريخي",
+                sourceMaterial: `<strong>نص لقَب 'رجل أوروبا المريض':</strong><br>"أدى ضعف الدولة العثمانية وتطورات المسألة الشرقية إلى أن تطلق الدول الأوروبية عليها لقب 'رجل أوروبا المريض'، مما أغرى هذه الدول بالاستعمار والتنافس المباشر واقتسام ممتلكاتها بالوطن العربي."`,
+                question: "ما الدلالة الاستراتيجية والتحليلية المطلقة لإطلاق الغرب لقب 'رجل أوروبا المريض' على الدولة العثمانية؟",
+                options: [
+                    "أ) انتشار الأوبئة والقتلى في صفوف الجيش العثماني بالأناضول.",
+                    "ب) إدراك الدول الأوروبية حالة العجز والضعف السياسي والعسكري للعثمانيين والاستعداد لتوزيع تركتهم وأملاكهم (المسألة الشرقية).",
+                    "ج) تقديم المعونات الطبية والإنسانية من أوروبا لبلاط السلطان.",
+                    "د) التحالف بين السلاطين والملكيات الأوروبية لإنشاء المزارع."
+                ],
+                correctAnswer: 1, // B
+                explanation: "المصطلح السياسي يعبر عن الضعف الهيكلي للدولة العثمانية وحرص القوى الكبرى على تقسيم أراضيها وممتلكاتها في الشام ومصر وشمال أفريقيا.",
+                distractorAnalysis: "أ، ج، د تفسيرات حرفية أو خاطئة تاريخياً."
+            },
+
+            // ==================== المرحلة الثالثة: تحدي الخرائط والبيانات (21-30) ====================
+            {
+                id: 21,
+                stage: 3,
+                stageTitle: "المرحلة الثالثة: تحدي الخرائط والبيانات",
+                skillId: 5,
+                skillName: "الاستنتاج من الخرائط والجداول والبيانات",
+                challengeType: "تحدي محلل البيانات",
+                sourceMaterial: `<strong>خريطة التوسع البرتغالي في الخليج العربي (إحداثيات نصية ومواقع):</strong><br>
+                - نقطة (1): [مسقط وخورفكان]: تعريضها للهجوم والتدمير وقطع آذان وأنوف السكان.<br>
+                - نقطة (2): [مضيق هرمز]: السيطرة على منفذ التجارة البحرية.<br>
+                - نقطة (3): [عدن وجزر كمران]: إحراق السفن ومحاولة غلق البحر الأحمر (1513م).`,
+                question: "تحليل الإحداثيات الجغرافية للخريطة يوضح أن الهدف الجيوسياسي الأهم للحملات البرتغالية (البوكيرك) كان:",
+                options: [
+                    "أ) نشر حركة الكشوف الجغرافية في صحراء الربع الخالي.",
+                    "ب) إغلاق الخوانق والمنافذ البحرية الاستراتيجية (هرمز ومضيق باب المندب) لاحتكار التجارة الشرقية وتدمير النشاط البحري العربي.",
+                    "ج) مساعدة حكام الخليج ضد التوسع العثماني.",
+                    "د) إنشاء قواعد لتعليم الزراعة الحديثة بالسواحل."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الخريطة والمواقع المحددة (هرمز، عدن، كمران، مسقط) توضح استراتيجية خنق التجارة عبر السيطرة على المداخل المائية للخليج والبحر الأحمر.",
+                distractorAnalysis: "الخيارات أ، ج، د تخالف الدلالات الجغرافية الصريحة لمواقع الخريطة."
+            },
+            {
+                id: 22,
+                stage: 3,
+                stageTitle: "المرحلة الثالثة: تحدي الخرائط والبيانات",
+                skillId: 5,
+                skillName: "الاستنتاج من الخرائط والجداول والبيانات",
+                challengeType: "تحدي محلل البيانات",
+                sourceMaterial: `<strong>جدول أشكال الاستعمار الأوروبي في الوطن العربي:</strong><br>
+                <table class="w-full text-center border-collapse border border-slate-700 text-xs mt-2">
+                <tr class="bg-slate-800 text-amber-400"><th>الشكل الاستعماري</th><th>الآلية والوسيلة</th><th>النموذج التطبيقي</th></tr>
+                <tr><td>الاستيطان</td><td>تهجير الرعايا ومصادرة الأراضي وإبادة السكان</td><td>الاحتلال الإيطالي لليبيا</td></tr>
+                <tr><td>الاحتلال العسكري</td><td>استخدام القوة المسلحة المباشرة بالقوة</td><td>احتلال فرنسا للجزائر</td></tr>
+                <tr><td>الحماية</td><td>معاهدات تكبل الشؤون الخارجية والمالية والعسكرية</td><td>المعاهدات البريطانية بالخليج العربي</td></tr>
+                <tr><td>الانتداب</td><td>ابتداع دولي بعد الحرب العالمية الأولى لتقاسم التركة</td><td>الانتداب الفرنسي على سوريا ولبنان</td></tr>
+                </table>`,
+                question: "استنتج من بيانات الجدول، كيف اختلف أسلوب 'الحماية' عن أسلوب 'الاحتلال العسكري المباشر'؟",
+                options: [
+                    "أ) الحماية تعني طرد جميع السكان وتطبيق الاستيطان الإيطالي.",
+                    "ب) الحماية أبقت الحكام المحليين في مناصبهم مع سلبهم السيطرة على الجيش والمالية والسياسة الخارجية بموجب معاهدات.",
+                    "ج) الاحتلال العسكري يعتمد فقط على منح القروض المالية وتراكم الفوائد.",
+                    "د) الانتداب والحماية هما نفس الأسلوب بغير أي اختلاف إداري."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الجدول يبين أن الحماية شكل غير مباشر يحافظ ظاهرياً على الحاكم المحلي لكنه ينزع منه القرار العسكري والمالي والخارجي لصالح المستعمر.",
+                distractorAnalysis: "أ، ج، د قراءات خاطئة للبيانات الواردة بالجدول."
+            },
+            {
+                id: 23,
+                stage: 3,
+                stageTitle: "المرحلة الثالثة: تحدي الخرائط والبيانات",
+                skillId: 1,
+                skillName: "قراءة النصوص والأشكال وتحليلها واستنتاج الحقائق",
+                challengeType: "تحدي المحقق التاريخي",
+                sourceMaterial: `<strong>نص دوافع الاستعمار الأوروبي:</strong><br>"تسابقت الدول الاستعمارية على الوطن العربي لعدة عوامل: الموقع الجغرافي المتميز المتحكم بمواصلات العالم، اعتباره مصدراً للمواد الخام وسوقاً لترويج المنتجات بعد الثورة الصناعية، خوف أوروبا من قيام دولة عربية موحدة في عهد محمد علي، والمكانة الدينية."`,
+                question: "ما السبب المباشر الذي جعل الثورة الصناعية في أوروبا دافعاً أساسياً لاستعمار الوطن العربي؟",
+                options: [
+                    "أ) الحاجة الملحة للعمالة الزراعية المباشرة من الشام.",
+                    "ب) زيادة الحاجة للمواد الخام وتدفق الموارد واحتياج المصانع الأوروبية لأسواق استهلاكية لبيع منتجاتها الفائضة.",
+                    "ج) بناء الكنائس في الأماكن المقدسة.",
+                    "د) رغبة الأوروبيين في تعلم الحرف اليدوية العربية."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الثورة الصناعية نتج عنها إنتاج ضخم بالآلات، مما تطلب البحث عن مواد خام رخيصة وأسواق عربية مفتوحة لاستيعاب المنتجات.",
+                distractorAnalysis: "الخيارات أ، ج، د دوافع غير مرتبطة بالآثار الاقتصادية والميكانيكية للثورة الصناعية."
+            },
+            {
+                id: 24,
+                stage: 3,
+                stageTitle: "المرحلة الثالثة: تحدي الخرائط والبيانات",
+                skillId: 4,
+                skillName: "إعداد المخططات الذهنية لأفكار النص والعلاقات",
+                challengeType: "تحدي مهندس المعرفة",
+                sourceMaterial: `<strong>مخطط آثار الاحتلال البرتغالي للخليج العربي:</strong><br>
+                [الغزو البرتغالي واحتكار تجارة الشرق] ➔ [1. تدهور الأحوال الاقتصادية] + [2. انهيار النشاط البحري لعرب الخليج] + [3. تحول طرق التجارة البحرية عن الخليج والبحر الأحمر].`,
+                question: "وفقاً للمخطط الذهني لآثار السيطرة البرتغالية، ما المنظومة الناتجة عن احتكار البرتغال للملاحة البحرية؟",
+                options: [
+                    "أ) ازدهار حركة الأسطول التجاري العماني فوراً.",
+                    "ب) شلل الأنشطة البحرية والتجارية العربية وتحويل حركة التجارة نحو طريق رأس الرجاء الصالح.",
+                    "ج) زيادة التبادل التجاري مع الموانئ المصرية والمملوكية.",
+                    "د) نشوب الحرب بين فرنسا وبريطانيا في الخليج."
+                ],
+                correctAnswer: 1, // B
+                explanation: "النتائج المترابطة بالمخطط توضح ضرب النشاط الملاحي لأهل الخليج وتدمير اقتصادات المنطقة وتحويل المسارات البحرية بعيداً عنهم.",
+                distractorAnalysis: "الخيارات أ، ج، د استنتاجات تتناقض مع المخطط المرفق."
+            },
+            {
+                id: 25,
+                stage: 3,
+                stageTitle: "المرحلة الثالثة: تحدي الخرائط والبيانات",
+                skillId: 8,
+                skillName: "تلخيص كيفية تطور الوقائع والأفكار الرئيسة",
+                challengeType: "تحدي التسلسل الزمني",
+                sourceMaterial: `<strong>نص مقاومة اليعاربة للبرتغال:</strong><br>"لم يقف عرب الخليج مكتوفي الأيدي، فقادت أسرة اليعاربة حركة المقاومة بزعامة الإمام ناصر بن مرشد وخلفائه، فتمكنوا من تحرير مسقط عام 1651م، ثم طرد البرتغاليين من الخليج وملاحقة فلولهم بسواحل الهند وشرق أفريقيا."`,
+                question: "لخص مسار حركة التحرر الوطنية التي قادتها دولة اليعاربة لطرد الاستعمار البرتغالي؟",
+                options: [
+                    "أ) الاستسلام للبوكيرك ➔ توقيع اتفاقية حماية ➔ النفي إلى الهند.",
+                    "ب) توحيد الصفوف قيادياً ➔ تحرير مسقط 1651م ➔ ملاحقة فلول البرتغاليين بسواحل المحيط الهندي وتطهير المنطقة.",
+                    "ج) الاستعانة بالأسطول الإسباني ➔ فتح القسطنطينية ➔ الانسحاب للشام.",
+                    "د) بناء مطابع دينية ➔ الهرب لمناطق البلقان."
+                ],
+                correctAnswer: 1, // B
+                explanation: "التلخيص التاريخي يبرز البداية بالتوحد تحت راية ناصر بن مرشد، ثم حسم المعركة بمسقط، ومواصلة الهجوم المضاد حتى سواحل أفريقيا والهند.",
+                distractorAnalysis: "أ، ج، د مسارات خيالية تتنافى مع الأحداث الناجحة لليعاربة."
+            },
+            {
+                id: 26,
+                stage: 3,
+                stageTitle: "المرحلة الثالثة: تحدي الخرائط والبيانات",
+                skillId: 3,
+                skillName: "تحديد معاني الكلمات والعبارات والمصطلحات المتخصصة",
+                challengeType: "تحدي خبير المصطلحات",
+                sourceMaterial: `<strong>سياق مصطلح (الغزو الثقافي):</strong><br>"يعد الغزو الثقافي من أخطر أشكال الاستعمار الجديد؛ لأنه يسهم في إضعاف الشعوب المغلوبة في معتقداتها وثقافتها وقيمها، عن طريق محاربة لغة السكان الأصليين وإحلال لغة المستعمر وتشويه التاريخ."`,
+                question: "ما المعنى المباشر والتدميري لمصطلح 'الغزو الثقافي' مقارنة بالاحتلال العسكري؟",
+                options: [
+                    "أ) استهداف البنية التحتية والمباني الحكومية فقط بالمدافع.",
+                    "ب) استهداف العقل والهوية واللغة والمنظومة القيمية للأمة لتجريدها من مقومات المقاومة والانتماء.",
+                    "ج) منح قروض مالية بفائدة منخفضة للطلاب.",
+                    "د) توقيع معاهدات الحدود البحرية الرسمية."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الغزو الثقافي يختلف عن العسكري بأنه يهاجم البنية الفكرية والهوية واللغة والمفاهيم ليضمن التبعية الدائمة دون حاجة لجيوش كثيفة.",
+                distractorAnalysis: "الخيارات أ، ج، د تفاسير سطجية لا تعبر عن خطورة المصطلح."
+            },
+            {
+                id: 27,
+                stage: 3,
+                stageTitle: "المرحلة الثالثة: تحدي الخرائط والبيانات",
+                skillId: 6,
+                skillName: "الاستشهاد بأدلة محددة من النص لدعم التحليلات",
+                challengeType: "تحدي شاهد الدليل",
+                sourceMaterial: `<strong>نص السلوك الوحشي للبرتغاليين:</strong><br>"اتبع البرتغاليون أساليب تميزت بالوحشية والتعصب الصليبي مع السكان، فكانوا يشعلون النيران في المدن والقرى بعد احتلالها، ويصادرون حمولة السفن ويعذبون البحارة ويقطعون آذان وأنوف السكان وخاصة في خورفكان ومسقط."`,
+                question: "أي الشواهد والأدلة المادية الواردة بالنص تبرهن على الإرهاب الاستعماري المتطرف الذي مارسه الفونسو دي البوكيرك؟",
+                options: [
+                    "أ) توقيع معاهدات تجارية منصفة مع صيادي الأسماك.",
+                    "ب) إحراق مدينة خورفكان ومسقط والتمثيل بجثث وأجساد الأهالي بقطع الآذان والأنوف وتعذيب البحارة.",
+                    "ج) تشجيع انتشار المدارس في صحار.",
+                    "د) فتح الموانئ للأسطول المالي."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الدليل النصي الصريح والمبين للوحشية يتجسد في الإحراق الممنهج للمدن والتمثيل الجسدي بالسكان بقطع الآذان والأنوف.",
+                distractorAnalysis: "الخيارات أ، ج، د تشويه للواقع الميداني المدعوم بالنص."
+            },
+            {
+                id: 28,
+                stage: 3,
+                stageTitle: "المرحلة الثالثة: تحدي الخرائط والبيانات",
+                skillId: 7,
+                skillName: "تقييم المصادر الموثوقة المناسبة للإجابة",
+                challengeType: "تحدي خبير المصادر",
+                sourceMaterial: `<strong>مقارنة مصادر تاريخية حول حملات البوكيرك:</strong><br>
+                المصدر (أ): "رسائل دي البوكيرك الملكية الموجهة لملك البرتغال سنة 1507م يفتخر فيها بإحراق السفن العربية في خورفكان ومسقط."<br>
+                المصدر (ب): "رواية خيالية كُتبت في القرن الحادي والعشرين تدعي أن حملات البرتغال كانت رحلات استكشافية سلمية."`,
+                question: "بصفتك محققاً تاريخياً، كيف تفند ادعاءات المصدر (ب) باستخدام قواعد نقد المصادر؟",
+                options: [
+                    "أ) قبول المصدر (ب) لأنه مكتوب بأسلوب ممتع ومستحدث.",
+                    "ب) إثبات كذب المصدر (ب) بالاستناد إلى اعترافات قائد الحملة نفسه في المصدر (أ) وهو مصدر أولي وثائقي يقر بالأعمال الوحشية.",
+                    "ج) حذف المصدرين معاً لعدم كفاية المعلومات.",
+                    "د) الاعتماد على المصدر (ب) لأن المصادر القديمة غير واضحة."
+                ],
+                correctAnswer: 1, // B
+                explanation: "اعتراف الفاعل المباشر (البوكيرك) في رسائله الرسمية المعاصرة (مصدر أولي) يدحض ويكذب أي رواية خيالية متأخرة تحاول تجميل الوقائع.",
+                distractorAnalysis: "أ، ج، د أساليب تفتقر للمنهجية العلمية والنقد التاريخي."
+            },
+            {
+                id: 29,
+                stage: 3,
+                stageTitle: "المرحلة الثالثة: تحدي الخرائط والبيانات",
+                skillId: 2,
+                skillName: "تحديد الفكرة الرئيسة للنص",
+                challengeType: "تحدي الفكرة الخفية",
+                sourceMaterial: `<strong>نص استغلال تفكك العالم الإسلامي:</strong><br>"استفاد البرتغاليون من الصراع القائم بين القوى الإسلامية الكبرى: الدولة الصفوية، الدولة العثمانية، ودولة المماليك، وانشغالها بالخلاف فيما بينها، وهو الأمر الذي سهل لهم احتلال المنطقة والسيطرة على مقدراتها."`,
+                question: "ما الفكرة الأساسية التي ينطوي عليها الموقف السياسي الإقليمي الموصوف أعلاه؟",
+                options: [
+                    "أ) القوة العسكرية الشاملة للأسطول البرتغالي التي لا تقهر.",
+                    "ب) التشرذم والصراع البيني بين الدول الإسلامية الكبرى كان العامل المحفز والمنفذ الأساسي للتغلغل الاستعماري الأجنبي.",
+                    "ج) توحد الدولة الصفوية مع دولة المماليك في حلف بحري.",
+                    "د) رغبة القوى الإسلامية في اعتزال التجارة العالمية."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الفكرة الخفية والمحورية هي أن الانقسام الداخلي والصراعات البينية بين الأقوياء توفر ثغرة ذهبية للمستعمر الخارجي للتمكن والتوسع.",
+                distractorAnalysis: "الخيارات أ، ج، د تفاسير جانبت المضمون السياسي التكتيكي للنص."
+            },
+            {
+                id: 30,
+                stage: 3,
+                stageTitle: "المرحلة الثالثة: تحدي الخرائط والبيانات",
+                skillId: 5,
+                skillName: "الاستنتاج من الخرائط والجداول والبيانات",
+                challengeType: "تحدي محلل البيانات",
+                sourceMaterial: `<strong>خريطة النفوذ الاستعماري في الوطن العربي:</strong><br>
+                - فرنسا ➔ احتلال الجزائر (1830)، تونس (قروض)، والانتداب على سوريا ولبنان.<br>
+                - بريطانيا ➔ احتلال مصر (قروض)، الحماية على الخليج العربي، الانتداب على فلسطين والعراق.<br>
+                - إيطاليا ➔ الاستيطان في ليبيا (1911).`,
+                question: "استنتج من الخريطة الهيكلية لتوزيع القوى الاستعمارية النتيجة الجغرافية الاستراتيجية في الوطن العربي؟",
+                options: [
+                    "أ) تركز الاستعمار الإيطالي في بلاد الشام فقط.",
+                    "ب) تقاسم الإمبراطوريات الأوروبية (خاصة بريطانيا وفرنسا) لجميع أجزاء الوطن العربي وتحويله إلى مناطق نفوذ استعمارية.",
+                    "ج) استقلال كامل أراضي المغرب العربي ومصر في القرن التاسع عشر.",
+                    "د) غياب النفوذ البريطاني عن منطقة الخليج العربي."
+                ],
+                correctAnswer: 1, // B
+                explanation: "التوزيع الجغرافي يثبت عملية تكامل وقتسام ممنهج للوطن العربي بين الدول الأوروبية الكبرى بمختلف الأشكال الاستعمارية.",
+                distractorAnalysis: "الخيارات أ، ج، د قراءات خاطئة ومناقضة لبيانات النفوذ المحددة."
+            },
+
+            // ==================== المرحلة الرابعة: المحققون والخبراء (31-40) ====================
+            {
+                id: 31,
+                stage: 4,
+                stageTitle: "المرحلة الرابعة: المحققون والخبراء",
+                skillId: 3,
+                skillName: "تحديد معاني الكلمات والعبارات والمصطلحات المتخصصة",
+                challengeType: "تحدي خبير المصطلحات",
+                sourceMaterial: `<strong>سياق مصطلح (سفر برليك):</strong><br>"'سفر برليك' هو اللفظ العربي المقابل للفظ التركي (سيفيرليك) والذي يعني التعبئة للحرب. وفي البلاد العربية كانت الكلمة تعني بدقة التجنيد الإجباري القسري وانتزاع مئات الآلاف من الشباب العرب ومواشيهم وممتلكاتهم للقتال في حروب العثمانيين ضد روسيا والبلقان والحرب العالمية الأولى."`,
+                question: "ما الانطباع التاريخي والمأساوي الذي حُفر في الذاكرة العربية عند إطلاق مصطلح 'سفر برليك'؟",
+                options: [
+                    "أ) رحلة سياحية وثقافية مجانية لشباب الولايات العربية إلى إسطنبول.",
+                    "ب) كابوس التجنيد الإجباري القسري والسوق لميادين الموت والتهجير الحافز للمجاعة والضياع الأسري.",
+                    "ج) مشروع لبناء الموانئ والمطارات المدنية في بلاد الشام.",
+                    "د) اتفاقية السلام والتسامح بين الدولة العثمانية وروسيا."
+                ],
+                correctAnswer: 1, // B
+                explanation: "سفر برليك ارتبط في الوجدان العربي بالمآسي والإجبار على التجنيد القسري واقتطاع قوت الأهالي للحروب العثمانية البعيدة.",
+                distractorAnalysis: "الخيارات أ، ج، د تفاسير تناقض البعد التاريخي المؤلم للمصطلح."
+            },
+            {
+                id: 32,
+                stage: 4,
+                stageTitle: "المرحلة الرابعة: المحققون والخبراء",
+                skillId: 1,
+                skillName: "قراءة النصوص والأشكال وتحليلها واستنتاج الحقائق",
+                challengeType: "تحدي المحقق التاريخي",
+                sourceMaterial: `<strong>إنفوجرافيك المذابح العثمانية ضد العرب (التاريخ المهمل):</strong><br>
+                - 1516: مذبحة التل (تصفية الآلاف من السوريين بحلب بعد مرج دابق).<br>
+                - 1517: مذبحة العشرة آلاف بمصر ومذبحة الصناع (نقل أمهر الحرفيين للإسطنبول).<br>
+                - 1842: مذبحة كربلاء (قتل الآلاف من الثائرين).<br>
+                - 1915-1916: مذبحة سفر برليك ومذبحة المرجة بالشام (إعدام جمال باشا لقادة الثورة).`,
+                question: "حلل المعطيات الواردة في الإنفوجرافيك التاريخي للمذابح العثمانية، ما الاستنتاج الشامل لحقيقة الحكم العثماني؟",
+                options: [
+                    "أ) اعتماد العثمانيين على الدبلوماسية والتسامح في حل الأزمات السياسية.",
+                    "ب) الحكم العثماني كان استبدادياً قمعياً قائماً على المذابح والتصفية الجسدية واستنزاف الكفاءات والقتل العشوائي لطمس أي حركة تجديد.",
+                    "ج) انحصار المذابح في المواجهات البحرية فقط ضد الأسبان.",
+                    "د) اهتمام العثمانيين بالحفاظ على البنية الاجتماعية وتطوير الصناعات الحرفية بمصر."
+                ],
+                correctAnswer: 1, // B
+                explanation: "التتبع الزمني للمذابح (منذ 1516 حتى 1916) يثبت اعتماد السلطة العثمانية على النهج الدموي والقمع وتصفية العقول والحرفيين لتثبيت سلطتها.",
+                distractorAnalysis: "أ، ج، د ادعاءات تناقض البيانات الدموية الموثقة في الإنفوجرافيك."
+            },
+            {
+                id: 33,
+                stage: 4,
+                stageTitle: "المرحلة الرابعة: المحققون والخبراء",
+                skillId: 6,
+                skillName: "الاستشهاد بأدلة محددة من النص لدعم التحليلات",
+                challengeType: "تحدي شاهد الدليل",
+                sourceMaterial: `<strong>نص جريمة تهجير سكان المدينة المنورة (فخري باشا 1916م):</strong><br>"أصدر فخر الدين باشا قراراً بتهجير سكان المدينة المنورة وترحيلهم قسرياً إلى دول أخرى خوفاً من التحاقهم بالثورة العربية، وتسبب حصاره في مجاعة قاسية وسطو على الأمانات النبوية الشريفة ونقلها لإسطنبول، وسجل التاريخ المشهد المأساوي لترحيل الآلاف."`,
+                question: "أي الأدلة النصية التالية تثبت ارتكاب الوالي فخري باشا لجريمة التطهير السكاني والسرقة التراثية في المدينة المنورة؟",
+                options: [
+                    "أ) استقبال الوالي لوفود حجاج بيت الله بالهدايا والأنعام.",
+                    "ب) الترحيل القسري والتهجير لآلاف السكان العرب وحصارهم والمقترن بالسطو على الأمانات النبوية الشريفة ونقلها للخارج.",
+                    "ج) بناء المستشفيات المجانية لأهالي المدينة المنورة.",
+                    "د) تسليم إدارة المدينة للشريف حسين بكل مرونة."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الدليل المادي القاطع المذكور في النص هو الترحيل القسري الجماعي لأهالي المدينة المنورة ونقل الأمانات والآثار النبوية الشريفة إلى الأناضول.",
+                distractorAnalysis: "الخيارات أ، ج، د تتناقض كلياً مع الشواهد التاريخية الصريحة."
+            },
+            {
+                id: 34,
+                stage: 4,
+                stageTitle: "المرحلة الرابعة: المحققون والخبراء",
+                skillId: 7,
+                skillName: "تقييم المصادر الموثوقة المناسبة للإجابة",
+                challengeType: "تحدي خبير المصادر",
+                sourceMaterial: `<strong>مقارنة أدبيات ادعاء 'الخلافة العثمانية':</strong><br>
+                المصدر (أ): "المراجع التاريخية التركية الرسمية التي تؤكد أن لقب 'الخليفة' لم يطرح في أدبيات الدولة إلا متأخراً جداً عام 1876م في عهد عبد الحميد الثاني لأغراض سياسية."<br>
+                المصدر (ب): "كتاب 'طبائع الاستبداد' للمفكر العربي عبد الرحمن الكواكبي الذي تصدى للاستبداد وأثبت أن الخلافة شرعاً وتاريخاً عربية."`,
+                question: "كيف يساهم التكامل المنهجي بين المصدرين (أ) و(ب) في التقييم العلمي لمناداة السلاطين بالخلافة؟",
+                options: [
+                    "أ) إثبات أن الخلافة العثمانية كانت قائمة ومستقرة منذ عهد عثمان الأول سنة 1299م.",
+                    "ب) دحض أسطورة الخلافة المزعومة وتأكيد أنها كانت مجرد غطاء ديني تم استدعاؤه متأخراً لتبرير الاحتلال والاستبداد العثماني للبلاد العربية.",
+                    "ج) التأكيد على أن الكواكبي كان يسانده السلطان عبد الحميد الثاني.",
+                    "د) إلغاء القيمة التاريخية للمراجع التركية."
+                ],
+                correctAnswer: 1, // B
+                explanation: "اتفاق المراجع التركية الذاتية مع طرح المفكر العربي الكواكبي يثبت تاريخياً أن استخدام غطاء 'الخلافة' كان ورقة سياسية متأخرة لتبرير الهيمنة الاستعمارية.",
+                distractorAnalysis: "أ، ج، د نتائج مغلوطة لا تتطابق مع التحليل المزدوج للمصدرين."
+            },
+            {
+                id: 35,
+                stage: 4,
+                stageTitle: "المرحلة الرابعة: المحققون والخبراء",
+                skillId: 8,
+                skillName: "تلخيص كيفية تطور الوقائع والأفكار الرئيسة",
+                challengeType: "تحدي التسلسل الزمني",
+                sourceMaterial: `<strong>نص قمع الحركة الوطنية وسقوط الدولة العثمانية:</strong><br>"مارس جمال باشا السفاح (قائد الجيش التركي الرابع) إعدامات تعسفية بحق الإصلاحيين والمفكرين العرب في دمشق وبيروت في 6 مايو 1916م. وتدهورت الدولة حتى سقطت رسمياً عام 1923م على يد مصطفى كمال أتاتورك الذي ألغى الخلافة 1924م ونقل العاصمة لأنقرة."`,
+                question: "تتبع المسار الذي أدى إلى النهاية المحتومة للدولة العثمانية وإعلان الجمهورية التركية الحديثة؟",
+                options: [
+                    "أ) إعدام جمال باشا لأتاتورك ➔ استمرار السلاطين ➔ فتح نيقوبولس.",
+                    "ب) القمع والدموية ضد قادة الفكر العربي 1916م ➔ الانهيار في الحرب العالمية الأولى ➔ إلغاء أتاتورك للسلطنة والخلافة وتأسيس دولة تركيا العلمانية 1923-1924م.",
+                    "ج) نقل العاصمة لإسطنبول ➔ التحالف مع المماليك ➔ هزيمة فرنسا.",
+                    "د) صدور دستور الكواكبي ➔ نفي جمال باشا ➔ الاستعانة بالصفويين."
+                ],
+                correctAnswer: 1, // B
+                explanation: "المسار المتسلسل يربط بين الذروة القمعية العثمانية ضد العرب، ثم الفشل العسكري، لينتهي بحركة أتاتورك وتفكيك الإمبراطورية وتأسيس دولة تركية جديدة.",
+                distractorAnalysis: "الخيارات أ، ج، د مسارات اختلاقية تخالف الحقائق التاريخية."
+            },
+            {
+                id: 36,
+                stage: 4,
+                stageTitle: "المرحلة الرابعة: المحققون والخبراء",
+                skillId: 2,
+                skillName: "تحديد الفكرة الرئيسة للنص",
+                challengeType: "تحدي الفكرة الخفية",
+                sourceMaterial: `<strong>نص الحكم العثماني في ميزان التاريخ:</strong><br>"يؤكد المؤرخون أنه لا يمكن اعتبار دخول شعب مسلم لأرض شعب مسلم آخر فتحاً، فهذا منافٍ للعلم. فالقرون الأربعة لحكم العثمانيين للبلاد العربية كانت غزواً واحتلالاً استنزف ثروات العرب وأورثهم الضعف والتخلف وهيأهم للاستعمار الغربي."`,
+                question: "ما الحكم التاريخي الأكاديمي الصريح الذي يقرره النص بشأن فترة السيطرة العثمانية على الوطن العربي؟",
+                options: [
+                    "أ) كانت فتحاً إسلامياً مباركاً نشر العلوم والتطور.",
+                    "ب) كانت احتلالاً واستعماراً وطنياً استنزف الطاقات وأغرق البلاد في التخلف ومهد للغزو الأوروبي.",
+                    "ج) كانت فترة تحالف فدرالي متكافئ بين العرب والأتراك.",
+                    "د) كانت مرحلة حماية حصرية لمكتسبات الثورة الصناعية."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الفكرة الرئيسة تنفي مقولة 'الفتح' وتؤكد التوصيف العلمي المحايد بأنها فترة احتلال واستعمار تسببت في إضعاف الأمة العربية.",
+                distractorAnalysis: "الخيارات أ، ج، د تبني ادعاءات عاطفية تنقض المعيار العلمي المعروض بالنص."
+            },
+            {
+                id: 37,
+                stage: 4,
+                stageTitle: "المرحلة الرابعة: المحققون والخبراء",
+                skillId: 4,
+                skillName: "إعداد المخططات الذهنية لأفكار النص والعلاقات",
+                challengeType: "تحدي مهندس المعرفة",
+                sourceMaterial: `<strong>مخطط التداعيات الأمنية والإنسانية للحرب العالمية الأولى بالشرق:</strong><br>
+                [فرض سفر برليك والتجنيد القسري] ➔ [حصار الحلفاء للشواطئ وحرمان الولايات من أغذية مصر] ➔ [المجاعة والموت وتجويع السكان] ➔ [انهيار البنية الاجتماعية والاقتصادية للولايات العربية].`,
+                question: "بناءً على المخطط الشجري، ما السبب المزدوج الذي أدى للمجاعة الكبرى في بلاد الشام خلال الحرب الأولى؟",
+                options: [
+                    "أ) زلزال شلل الموانئ واعتزال التجار للعمل.",
+                    "ب) سياسة السخرة والتجنيد العثماني (سفر برليك) بالتزامن مع حصار الحلفاء البحري ومنع وصول المؤن من مصر.",
+                    "ج) هجوم الأسطول البرتغالي على ميناء الإسكندرية.",
+                    "د) توقف الأمطار واحتراق مزارع الزيتون تلقائياً."
+                ],
+                correctAnswer: 1, // B
+                explanation: "المخطط يوضح التضافر الكارثي بين القمع العثماني الداخلي (سفر برليك ومصادرة الحيوانات والمؤن) والحصار الخارجي للحلفاء، مما أنتج المجاعة.",
+                distractorAnalysis: "أ، ج، د تعليلات لا تطابق العلاقات العلية المنظومة بالمخطط."
+            },
+            {
+                id: 38,
+                stage: 4,
+                stageTitle: "المرحلة الرابعة: المحققون والخبراء",
+                skillId: 5,
+                skillName: "الاستنتاج من الخرائط والجداول والبيانات",
+                challengeType: "تحدي محلل البيانات",
+                sourceMaterial: `<strong>جدول التضحيات الوطنية العربية ضد الاستبداد العثماني:</strong><br>
+                <table class="w-full text-center border-collapse border border-slate-700 text-xs mt-2">
+                <tr class="bg-slate-800 text-amber-400"><th>الحدث/المقاومة</th><th>التاريخ</th><th>الموقع</th><th>طبيعة التضحية والمواجهة</th></tr>
+                <tr><td>ثورة الشريف حسين</td><td>1916م</td><td>الحجاز والجزيرة</td><td>مواجهة عسكرية لإسقاط الاستبداد العثماني</td></tr>
+                <tr><td>شهداء 6 مايو</td><td>1916م</td><td>دمشق وبيروت</td><td>تقديم قادة الفكر والإصلاح لأرواحهم بالمشانق</td></tr>
+                <tr><td>مقاومة أهالي المدينة</td><td>1916م</td><td>المدينة المنورة</td><td>الصمود أمام الترحيل القسري والحصار (فخري باشا)</td></tr>
+                </table>`,
+                question: "استنتج من الجدول المعنى السياسي والتاريخي للتضحيات التي قدمها أبناء الوطن العربي عام 1916م؟",
+                options: [
+                    "أ) الرغبة في التبعية التامة للدول الأوروبية الاستعمارية.",
+                    "ب) الرفض العربي القاطع للاستبداد والتتريك والإصرار على نيل الحرية والاستقلال والحفاظ على الهوية الوطنية.",
+                    "ج) مساندة جيوش جمال باشا في حروبه بالبلقان.",
+                    "د) السعي لتسليم المقدرات الاقتصادية للشركة البرتغالية."
+                ],
+                correctAnswer: 1, // B
+                explanation: "التضحيات المتنوعة (ثورة مسلحة، شهداء فكر بالمشانق، وصمود مدني) تعكس وعياً عربياً رافضاً للقمع ومتشوقاً للسيادة والحرية.",
+                distractorAnalysis: "الخيارات أ، ج، د قراءات تتناقض مع جوهر التضحيات الوطنية المعروضة."
+            },
+            {
+                id: 39,
+                stage: 4,
+                stageTitle: "المرحلة الرابعة: المحققون والخبراء",
+                skillId: 1,
+                skillName: "قراءة النصوص والأشكال وتحليلها واستنتاج الحقائق",
+                challengeType: "تحدي المحقق التاريخي",
+                sourceMaterial: `<strong>نص الحملة الفرنسية كـ 'شرارة حضارية':</strong><br>"كانت الحملة الفرنسية التي جاءت إلى مصر ثم الشام عام 1798م بمثابة الشرارة الحضارية الأولى التي استفاق من خلالها العرب على واقع التخلف والضعف الذي يعيشونه نتيجة العزلة العثمانية."`,
+                question: "حلل العبارة التاريخية أعلاه: كيف شكلت الحملة الفرنسية 1798م 'صدمة حضارية' للعرب؟",
+                options: [
+                    "أ) لأن الفرنسيين قاموا بتأسيس الدولة العثمانية الجديدة.",
+                    "ب) لأنها كشفت للعرب حجم الفجوة الهائلة بين النهضة العلمية والتقنية الأوروبية وبين الجمود والتخلف المجهل المفروض عليهم عثمانياً.",
+                    "ج) لأنها أدت لفتح طريق رأس الرجاء الصالح فوراً.",
+                    "د) لأن نابليون بونابرت أعلن نفسه خليفة في إسطنبول."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الصدمة الحضارية نتجت عن احتكاك العرب بأدوات العلوم والمطابع والعلوم الحديثة المرافقة للحملة، فنبهتهم لعمق التخلف الذي خلفه الاحتلال العثماني.",
+                distractorAnalysis: "الخيارات أ، ج، د استنتاجات لا تمت بصلة للتحليل الثقافي للحدث."
+            },
+            {
+                id: 40,
+                stage: 4,
+                stageTitle: "المرحلة الرابعة: المحققون والخبراء",
+                skillId: 3,
+                skillName: "تحديد معاني الكلمات والعبارات والمصطلحات المتخصصة",
+                challengeType: "تحدي خبير المصطلحات",
+                sourceMaterial: `<strong>سياق مصطلح (الوصاية الدولية):</strong><br>"أقرت هيئة الأمم المتحدة نظام الوصاية الدولية بعد الحرب العالمية الثانية لإدارة الشعوب التي كانت تحت الانتداب بحجة عدم وصولها لمرحلة تمكنها من إدارة شؤونها، ومن أمثلة ذلك الوصاية على ليبيا والصومال."`,
+                question: "ما المعنى المباشر والتبريري المعتمد في نظام 'الوصاية الدولية'؟",
+                options: [
+                    "أ) منح الدعم المالي اللا مشروط لدول الخليج العربي.",
+                    "ب) نظام دولي بديل للانتداب يضع الأقاليم غير المستقلة تحت إشراف أممي ودول تديرها بحجة تأهيلها لإدارة حكمها الذاتي.",
+                    "ج) التنازل المباشر عن الأراضي لصالح المستوطنين الإيطاليين.",
+                    "د) التجنيد الإجباري لسكان المستعمرات في حلف الناتو."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الوصاية نظام استعماري مغلف بإشراف الأمم المتحدة، مبرره المكتوب هو الأخذ بيد الشعوب القاصرة حتى تكتمل قدرتها على الإدارة.",
+                distractorAnalysis: "أ، ج، د تعاريف تخلط بين الوصاية وأشكال استعمارية أخرى كالاستيطان والسخرة."
+            },
+
+            // ==================== المرحلة الخامسة: الاختبار النهائي للخبراء (41-50) ====================
+            {
+                id: 41,
+                stage: 5,
+                stageTitle: "المرحلة الخامسة: الاختبار النهائي للخبراء",
+                skillId: 1,
+                skillName: "قراءة النصوص والأشكال وتحليلها واستنتاج الحقائق",
+                challengeType: "تحدي المحقق التاريخي",
+                sourceMaterial: `<strong>سند مركّب حول تجربة محمد علي باشا في مصر:</strong><br>"تخوفت بريطانيا وبصفة خاصة من نجاح نهضة مصر في عهد محمد علي وقيام دولة عربية موحدة وحديثة تقف حائلاً دون تحقيق أطماع الدول الأوروبية، فتدخلت الدول الكبرى لعرقله مشروعه التنموي والتوسعي بالشام والحجاز."`,
+                question: "حلل الموقف الاستعماري المركب: لماذا اعتبرت أوروبا (بريطانيا) مشهد بناء دولة عربية موحدة في عهد محمد علي خطراً أشد من بقاء الدولة العثمانية الضعيفة؟",
+                options: [
+                    "أ) لأن محمد علي كان يحالف الأسطول البرتغالي في المحيط الهندي.",
+                    "ب) لأن قيام دولة عربية قوية وموحدة ومتطورة يقطع طرق المواصلات على الإمبراطوريات ويمنعها من نهب الموارد، بينما تفضل أوروبا بقاء 'الرجل المريض' العاجز لسهولة ابتزازه.",
+                    "ج) لأن محمد علي ألغى جميع المدارس والمصانع الحديثة.",
+                    "د) لرغبة بريطانيا في نقل العاصمة إلى القاهرة."
+                ],
+                correctAnswer: 1, // B
+                explanation: "التحليل الاستراتيجي يثبت أن الغرب يستفيد من ضعف السلطة العثمانية المريضة لاستنزافها، في حين أن نشوء كيان عربي حديث وموحد يهدد المصالح الاستعمارية برمتها.",
+                distractorAnalysis: "أ، ج، د استنتاجات تتناقض مع منطق المسألة الشرقية والتوازنات الدولية."
+            },
+            {
+                id: 42,
+                stage: 5,
+                stageTitle: "المرحلة الخامسة: الاختبار النهائي للخبراء",
+                skillId: 8,
+                skillName: "تلخيص كيفية تطور الوقائع وتصميم مواد مكتوبة للتحقق",
+                challengeType: "تحدي الباحث المحترف",
+                sourceMaterial: `<strong>مقتطفات بحثية متعددة حول شخصية 'كمال أتاتورك':</strong><br>
+                - مرجع (1): بدأ حياته جندياً بالجيش العثماني وأسس الحزب الوطني لإنقاذ بلاده من الانهيار.<br>
+                - مرجع (2): انتخب رئيساً 1920م وقام بإلغاء السلطنة 1922م والخلافة 1924م ونقل العاصمة لأنقرة محولاً البلاد نحو النمط الأوروبي.`,
+                question: "إذا طلبت منك مادة مكتوبة للتحقق من شخصية أتاتورك، ما التلخيص البحثي الأكثر دقة وموضوعية لمسيرته؟",
+                options: [
+                    "أ) قائد عثماني حافظ على نمط التقليد القديم وأعاد فتح البلقان بنفس أسلوب بايزيد.",
+                    "ب) شخصية عسكرية وسياسية محورية أنهت حقبة الإمبراطورية العثمانية المنهارة، وأسست الدولة التركية الحديثة ذات المنزع العلماني والتوجّه الأوروبي.",
+                    "ج) مفكر عربي ألف كتاب طبائع الاستبداد للرد على السلاطين.",
+                    "د) والي عثماني على المدينة المنورة قام بنقل الآثار النبوية."
+                ],
+                correctAnswer: 1, // B
+                explanation: "التلخيص المنهجي يجمع بين دوره العسكري ومبادرته التأسيسية لإلغاء مؤسسات العهد العثماني القديم وتأسيس تركيا الحديثة ذات التوجه الغربي.",
+                distractorAnalysis: "الخيارات أ، ج، د خلط فاضح بين أتاتورك وشخصيات مثل فخري باشا أو الكواكبي."
+            },
+            {
+                id: 43,
+                stage: 5,
+                stageTitle: "المرحلة الخامسة: الاختبار النهائي للخبراء",
+                skillId: 7,
+                skillName: "تقييم المصادر الموثوقة المناسبة للإجابة",
+                challengeType: "تحدي خبير المصادر",
+                sourceMaterial: `<strong>تقييم مصادر القضية الوطنية الإماراتية (قانون مكافحة التمييز والكراهية):</strong><br>
+                المصدر (1): "نص المرسوم بقانون الصادر عن رئيس الدولة حفظه الله بشأن مكافحة التمييز والكراهية، والذي يجرم التمييز ويضمن المساواة والتسامح."<br>
+                المصدر (2): "مقالة رأي شخصية على منتدى غير رسمي."`,
+                question: "عند كتابة بحث عن النماذج الوطنية الرائدة في التعايش ومكافحة التمييز، كيف تثبت القيمة التشريعية للمصدر (1)؟",
+                options: [
+                    "أ) اعتباره وثيقة مرجعية قانونية وسيادية أعلى درجة في الموثوقية تجسد النموذج الإماراتي المتسامح.",
+                    "ب) المصدر (2) أفضل لأنه يحتوي على مناقشات بين الأعضاء.",
+                    "ج) تجاهل المرسوم القانوني واستبداله بروايات قديمة.",
+                    "د) اعتبار القانون غير نافذ في الإدارات العامة."
+                ],
+                correctAnswer: 0, // A
+                explanation: "المراسيم والقوانين الرسمية الصادرة من قيادة الدولة هي أرفع المصادر الأولية التشريعية التي يقع عليها الاعتماد في التقييم العلمي لمؤسسات الدولة.",
+                distractorAnalysis: "الخيارات ب، ج، د أخطاء منهجية صريحة في تقييم موثوقية التشريعات."
+            },
+            {
+                id: 44,
+                stage: 5,
+                stageTitle: "المرحلة الخامسة: الاختبار النهائي للخبراء",
+                skillId: 5,
+                skillName: "الاستنتاج من الخرائط والجداول والبيانات",
+                challengeType: "تحدي محلل البيانات",
+                sourceMaterial: `<strong>جدول التطور التاريخي للعلاقات الاستعمارية - العثمانية - العربية:</strong><br>
+                <table class="w-full text-center border-collapse border border-slate-700 text-xs mt-2">
+                <tr class="bg-slate-800 text-amber-400"><th>المرحلة التاريخية</th><th>حالة الدولة العثمانية</th><th>الموقف الأوروبي الاستعماري</th><th>واقع الوطن العربي</th></tr>
+                <tr><td>القرن 16 - 17م</td><td>قوة توسعية كبرى</td><td>مواجهة وتوجس عسكري</td><td>ضم متوالٍ وسيطرة عثمانية</td></tr>
+                <tr><td>القرن 18م</td><td>بداية الضعف والجمود</td><td>كشوف وتنافس تجاري (برتغال)</td><td>تدهور اقتصادي وعزلة عن العلوم</td></tr>
+                <tr><td>القرن 19 - 20م</td><td>رجل أوروبا المريض</td><td>امتيازات وتقاسم التركة الاستعمارية</td><td>وقوع الولايات تحت الاستعمار الغربي</td></tr>
+                </table>`,
+                question: "استنتج العلاقة التبادلية بين 'انحسار وتدهور القوة العثمانية' و'تغلغل الاستعمار الأوروبي في الوطن العربي' عبر القرون؟",
+                options: [
+                    "أ) العلاقة طردية: كلما زادت قوة العثمانيين زاد الاستعمار الأوروبي للوطن العربي.",
+                    "ب) العلاقة عكسية ومباشرة: كلما ضعف جسد الدولة العثمانية وتدهورت، كلما تسارعت وتيرة التكالب والتغلغل الاستعماري الأوروبي لاقتسام الوطن العربي.",
+                    "ج) عدم وجود أي علاقة بين مسار القوة العثمانية والغزو الغربي.",
+                    "د) اتحادات عسكرية بين العرب والغرب لطرد العثمانيين في القرن 16."
+                ],
+                correctAnswer: 1, // B
+                explanation: "تحليل جدول القرون يظهر بوضوح أن تراجع وهوان الدولة العثمانية جعل الوطن العربي المكشوف فريسة سهلة ومباشرة للأطماع الاستعمارية الأوروبية.",
+                distractorAnalysis: "الخيارات أ، ج، د قراءات خاطئة تفتقر للمنطق التاريخي التحليلي."
+            },
+            {
+                id: 45,
+                stage: 5,
+                stageTitle: "المرحلة الخامسة: الاختبار النهائي للخبراء",
+                skillId: 4,
+                skillName: "إعداد المخططات الذهنية لأفكار النص والعلاقات",
+                challengeType: "تحدي مهندس المعرفة",
+                sourceMaterial: `<strong>مخطط التقييم الشامل للآثار المترتبة على قرون السيطرة العثمانية للوطن العربي:</strong><br>
+                [4 قرون من الحكم العثماني] ➔ [1. تفتيت الوحدة وتهميش اللسان العربي] + [2. الجمود الفكري ومنع الطباعة] + [3. إرهاق الاقتصاد بالالتزام والضرائب] + [4. تفكيك البنية الاجتماعية بالمذابح وسفر برليك] ➔ [النتيجة الفتاكة: الوقوع تحت الاستعمار الأوروبي الحديث].`,
+                question: "ما المحصلة الختامية الجامعة للآثار المترتبة على أربعة قرون من الحكم العثماني وفق المخطط الشامل؟",
+                options: [
+                    "أ) دخول الوطن العربي عصر النهضة الصناعية والتكنولوجية المبكرة.",
+                    "ب) استنزاف الموارد وإضعاف العرب فكرياً واقتصادياً وسياسياً وتسليمهم فريسة سهلة للاستعمار الغربي.",
+                    "ج) بناء أكبر أسطول تجاري عربي في المحيط الهندي.",
+                    "د) تحقيق الحكم الذاتي والديمقراطي لكافة الولايات."
+                ],
+                correctAnswer: 1, // B
+                explanation: "المحصلة النهائية المبينة في المخطط الشامل هي أن القرون الأربعة خلفت إرثاً ثقيلاً من الضعف الشامل والتخلف الذي مهد الطريق مباشرة للغزو الأوروبي.",
+                distractorAnalysis: "أ، ج، د استنتاجات تتنافى مع النتائج العلمية للمخطط."
+            },
+            {
+                id: 46,
+                stage: 5,
+                stageTitle: "المرحلة الخامسة: الاختبار النهائي للخبراء",
+                skillId: 6,
+                skillName: "الاستشهاد بأدلة محددة من النص لدعم التحليلات",
+                challengeType: "تحدي شاهد الدليل",
+                sourceMaterial: `<strong>نص مقولة المؤرخين في التوصيف الاستعماري:</strong><br>"يجمع المؤرخون على أن احتلال العثمانيين للمنطقة العربية وغزوهم دولها ليس محل وجهات نظر بل هو حقيقة. فالسلطان العثماني كان حاكماً استعمارياً والبلاد العربية عانت التبعية لمركز استعماري استنزف ثروات العرب وأورثهم التخلف."`,
+                question: "أي الأدلة النصية والأكاديمية المباشرة ترد بها على من يدعي أن الحكم العثماني لم يكن استعماراً؟",
+                options: [
+                    "أ) استشهادات المراجع الأجنبية التي تمدح نظام البقشيش.",
+                    "ب) إجماع المؤرخين والأدلة المادية على ممارسة التبعية المركبة وتجريد الشعوب من ثرواتها وفرض التتريك وسلب الإرادة السياسية.",
+                    "ج) إرسال مفاتيح الكعبة لسليم الأول سلمياً.",
+                    "د) بناء السكك الحديدية بالبلقان."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الدليل العلمي المحكم يقوم على إجماع المراجع والأدلة المادية التي تبين توفر جميع أركان التعريف العلمي للاستعمار (التبعية، الاستنزاف، السلب السياسي).",
+                distractorAnalysis: "الخيارات أ، ج، د أساليب لا توفر دليلاً ينقض التوصيف الاستعماري."
+            },
+            {
+                id: 47,
+                stage: 5,
+                stageTitle: "المرحلة الخامسة: الاختبار النهائي للخبراء",
+                skillId: 3,
+                skillName: "تحديد معاني الكلمات والعبارات والمصطلحات المتخصصة",
+                challengeType: "تحدي خبير المصطلحات",
+                sourceMaterial: `<strong>سياق مصطلح (الانتداب):</strong><br>"ابتدعت الدول المنتصرة في الحرب العالمية الأولى شكلاً جديداً أطلقت عليه (الانتداب) لتقاسم ممتلكات الدول المهزومة بحجة الأخذ بيد الشعوب والنهوض بها، بينما الحقيقة هي إبقاء هذه الشعوب تحت هيمنتها لنهب ثرواتها كالانتداب الفرنسي على سوريا."`,
+                question: "ما النفاق السياسي المزدوج الذي يكشفه الفهم العميق لمصطلح 'الانتداب'؟",
+                options: [
+                    "أ) تقديم المساعدات المالية بدون مقابل لشعوب الشام.",
+                    "ب) التستر والتمويه الشكلي بشعارات إنسانية (مساعدة الشعوب للنهوض) لتغطية الجوهر الاستعماري الحقيقي القائم على السيطرة ونهب الثروات.",
+                    "ج) فتح الحدود بين جميع الدول العربية بحرية.",
+                    "د) إلغاء كافة الديون المالية المفروضة على مصر."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الانتداب مصطلح ابتكره الاستعمار للتحايل الأخلاقي، حيث يدعي رعاية الشعب القاصر في حين يمارس السيطرة والاستغلال الاستعماري المباشر.",
+                distractorAnalysis: "أ، ج، د قراءات تخدع بالغطاء الظاهري وتتجاهل جوهر المصطلح."
+            },
+            {
+                id: 48,
+                stage: 5,
+                stageTitle: "المرحلة الخامسة: الاختبار النهائي للخبراء",
+                skillId: 2,
+                skillName: "تحديد الفكرة الرئيسة للنص",
+                challengeType: "تحدي الفكرة الخفية",
+                sourceMaterial: `<strong>نص الوحدة الوطنية والوعي المقاوم بالخليج العربي:</strong><br>"استطاع عرب الخليج بعد أن تحققت وحدتهم الوطنية بزعامة أسرة اليعاربة من التصدي للغزو البرتغالي والتخلص منه نهائياً، ورسم ملحمة بطولية أثبتت أن التلاحم والقيادة الحكيمة هما السلاح الحاسم للتغلب على القوى المستعمرة الباغية."`,
+                question: "ما الدرس المستفاد والفكرة الأعمق التي يقدمها تاريخ مقاتلة عرب الخليج للبرتغاليين للأجيال الحاضرة؟",
+                options: [
+                    "أ) التراجع أمام التطور التكنولوجي الأجنبي واعتباره قدراً لا يرد.",
+                    "ب) الوحدة الوطنية، التلاحم بين الشعب والقيادة الحكيمة، والإصرار على المقاومة هي ركائز حفظ السيادة والتغلب على أعتى التحديات.",
+                    "ج) الاعتماد الحصري على المعونات الخارجية من الدول المجاورة.",
+                    "د) التنازل عن الموانئ البحرية مقابل تجارة التوابل."
+                ],
+                correctAnswer: 1, // B
+                explanation: "الفكرة الرئيسة والدرس الخالد يكمن في تجسيد قيمة الوحدة والالتفاف حول القيادة الوطنية الوطنية لتحقيق النصر وتحرير التراب الوطني.",
+                distractorAnalysis: "الخيارات أ، ج، د استنتاجات سلبيّة مناقضة لروح الملحمة البطولة."
+            },
+            {
+                id: 49,
+                stage: 5,
+                stageTitle: "المرحلة الخامسة: الاختبار النهائي للخبراء",
+                skillId: 1,
+                skillName: "قراءة النصوص والأشكال وتحليلها واستنتاج الحقائق",
+                challengeType: "تحدي المحقق التاريخي",
+                sourceMaterial: `<strong>نص مقارنة أشكال الاستعمار الإيطالي والفرنسي والبريطاني:</strong><br>"تعددت وسائل الاستعمار: فالإيطالي اعتمد الاستيطان وإبادة السكان بليبيا، والفرنسي اعتمد الاحتلال العسكري والغزو الثقافي وطمس اللسان بالجزائر وسوريا، والبريطاني اعتمد الحماية والانتداب والسيطرة على القروض والتجارة بمصر والخليج."`,
+                question: "بناءً على تحليلك المركب، ما الرابط الأيديولوجي المشترك بين جميع هذه الأشكال الاستعمارية المتعددة؟",
+                options: [
+                    "أ) سعي الدول الاستعمارية لنشر السلام والتنمية المستدامة بالوطن العربي.",
+                    "ب) التوحد حول هدف استراتيجي واحد وهو الهيمنة السياسية والعسكرية والاستغلال الاقتصادي لطاقات الوطن العربي مع اختلاف الوسائل والأقنعة.",
+                    "ج) نشر اللغة العربية في المدارس الأوروبية.",
+                    "د) الدفاع عن الحدود الشرقية ضد الغزو المغولي."
+                ],
+                correctAnswer: 1, // B
+                explanation: "مهما تنوعت الأقنعة (استيطان، احتلال، حماية، انتداب، غزو ثقافي)، فإن الهدف الهيكلي الاستعماري الثابت هو إخضاع الشعوب ونهب مقدراتها وتجريدها من السيادة.",
+                distractorAnalysis: "الخيارات أ، ج، د تفاسير تتنافى كلياً مع التحليل الناقد للسياسات الاستعمارية."
+            },
+            {
+                id: 50,
+                stage: 5,
+                stageTitle: "المرحلة الخامسة: الاختبار النهائي للخبراء",
+                skillId: 8,
+                skillName: "تلخيص كيفية تطور الوقائع وتصميم مواد مكتوبة للتحقق",
+                challengeType: "تحدي الباحث المحترف",
+                sourceMaterial: `<strong>خاتمة الوحدة الثالثة: تاريخ الوطن العربي الحديث والمعاصر:</strong><br>"يظل تاريخ الوطن العربي شهادة حية على عظمة إرادة شعوبه، حيث واجه التحديات والتغلغل العثماني والاستعمار الأوروبي والبرتغالي، واستعاد هوية سيادته بالتضحيات والوعي والتلاحم الوطني."`,
+                question: "بصفتك باحثاً في مادة الدراسات الاجتماعية بمدرسة محمد بن راشد، صغ التوصية البحثية الختامية المتكاملة لأقرانك الطلاب؟",
+                options: [
+                    "أ) الاكتفاء بحفظ الأسماء والتواريخ دون فهم العلية والأسباب الاستراتيجية للأحداث.",
+                    "ب) التسلح مهارياً بالتفكير الناقد، تحليل المصادر الأولية والمخططات والخرائط، واستلهام الدروس الوطنية لحفظ مقدرات الوطن والاعتزاز بالهوية العربية والإماراتية.",
+                    "ج) الاعتماد على المدونات الإلكترونية غير الموثوقة لاستقاء المعرفة التاريخية.",
+                    "د) الإيمان بأن أحوال الدول تتغير بالصدفة دون وجود قوانين تاريخية."
+                ],
+                correctAnswer: 1, // B
+                explanation: "التوصية البحثية السليمة تلخص أهداف مادة الدراسات الاجتماعية في بناء الوعي، إتقان مهارات التحليل والاستدلال، والاعتزاز بالهوية الوطنية والتضحيات التاريخية.",
+                distractorAnalysis: "الخيارات أ، ج، د نصائح هشة ومخالفة لنواتج التعلم ومهارات التفكير العليا."
+            }
+        ];
+
+        // ==================== متغيرات اللعبة وحالتها ====================
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let correctCount = 0;
+        let wrongCount = 0;
+        let streak = 0;
+        let studentName = "";
+        let timerEnabled = true;
+        let timerInterval = null;
+        let timeLeft = 45;
+        let help5050Used = false;
+        let helpHintUsed = false;
+        let helpTimeUsed = false;
+
+        // مصفوفة تتبع المهارات الثماني (الأسئلة الصحيحة / الإجمالي)
+        let skillsTracker = {
+            1: { correct: 0, total: 0, name: "قراءة النصوص والأشكال وتحليلها" },
+            2: { correct: 0, total: 0, name: "تحديد الفكرة الرئيسة للنص" },
+            3: { correct: 0, total: 0, name: "تحديد معاني الكلمات والمصطلحات" },
+            4: { correct: 0, total: 0, name: "إعداد المخططات الذهنية والعلاقات" },
+            5: { correct: 0, total: 0, name: "الاستنتاج من الخرائط والجداول والبيانات" },
+            6: { correct: 0, total: 0, name: "الاستشهاد بأدلة محددة من النص" },
+            7: { correct: 0, total: 0, name: "تقييم المصادر الموثوقة والملاءمة" },
+            8: { correct: 0, total: 0, name: "تلخيص التطور التاريخي والتحقق" }
+        };
+
+        // حساب إجمالي الأسئلة المخصصة لكل مهارة
+        questionsBank.forEach(q => {
+            if (skillsTracker[q.skillId]) {
+                skillsTracker[q.skillId].total++;
+            }
+        });
+
+        // ==================== وظائف التحكم واللعب ====================
+        
+        function startGame() {
+            const nameInput = document.getElementById("student-name").value.trim();
+            if (!nameInput) {
+                alert("يرجى إدخال اسم الطالب كاملاً للبدء في التحدي!");
+                return;
+            }
+            studentName = nameInput;
+            timerEnabled = document.getElementById("timer-toggle").checked;
+
+            // إخفاء واجهة البداية وإظهار اللعبة
+            document.getElementById("start-screen").classList.add("hidden");
+            document.getElementById("game-screen").classList.remove("hidden");
+
+            // حفظ الاسم محلياً
+            try {
+                localStorage.setItem("mbr_social_student_name", studentName);
+            } catch(e){}
+
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            // إعادة ضبط المؤقت والوسائل
+            clearInterval(timerInterval);
+            const q = questionsBank[currentQuestionIndex];
+
+            // تحديث العدادات والشارات
+            document.getElementById("question-counter").innerText = `السؤال ${currentQuestionIndex + 1} من ${questionsBank.length}`;
+            document.getElementById("current-stage-badge").innerText = q.stageTitle;
+            document.getElementById("challenge-type-badge").innerHTML = `<i class="fa-solid fa-bolt ml-1"></i> ${q.challengeType}`;
+            document.getElementById("skill-type-badge").innerText = `المهارة: ${q.skillName}`;
+            document.getElementById("progress-bar").style.width = `${((currentQuestionIndex + 1) / questionsBank.length) * 100}%`;
+
+            // تحميل المادة المصدرية ونص السؤال
+            document.getElementById("source-material-container").innerHTML = q.sourceMaterial;
+            document.getElementById("question-text").innerText = q.question;
+
+            // توليد الخيارات
+            const optionsContainer = document.getElementById("options-container");
+            optionsContainer.innerHTML = "";
+            
+            q.options.forEach((optText, idx) => {
+                const btn = document.createElement("button");
+                btn.className = "option-btn w-full bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-amber-500/50 rounded-xl p-4 text-right text-sm font-semibold text-slate-100 transition duration-200 flex items-center justify-between";
+                btn.setAttribute("onclick", `selectOption(${idx})`);
+                btn.setAttribute("id", `option-${idx}`);
+                btn.innerHTML = `<span>${optText}</span> <i class="fa-regular fa-circle text-slate-500"></i>`;
+                optionsContainer.appendChild(btn);
+            });
+
+            // إخفاء التغذية الراجعة
+            document.getElementById("feedback-container").classList.add("hidden");
+
+            // تشغيل المؤقت إذا كان مفعلاً
+            if (timerEnabled) {
+                document.getElementById("timer-box").classList.remove("hidden");
+                timeLeft = 45;
+                document.getElementById("timer-display").innerText = timeLeft;
+                timerInterval = setInterval(() => {
+                    timeLeft--;
+                    document.getElementById("timer-display").innerText = timeLeft;
+                    if (timeLeft <= 0) {
+                        clearInterval(timerInterval);
+                        handleTimeout();
+                    }
+                }, 1000);
+            } else {
+                document.getElementById("timer-box").classList.add("hidden");
+            }
+        }
+
+        function selectOption(selectedIndex) {
+            clearInterval(timerInterval);
+            const q = questionsBank[currentQuestionIndex];
+            const isCorrect = selectedIndex === q.correctAnswer;
+
+            // تعطيل جميع الأزرار
+            const buttons = document.querySelectorAll(".option-btn");
+            buttons.forEach(btn => btn.disabled = true);
+
+            // تلوين الإجابات
+            buttons.forEach((btn, idx) => {
+                if (idx === q.correctAnswer) {
+                    btn.classList.remove("bg-slate-800", "border-slate-700");
+                    btn.classList.add("bg-emerald-950/80", "border-emerald-500", "text-emerald-200");
+                    btn.querySelector("i").className = "fa-solid fa-circle-check text-emerald-400 text-lg";
+                } else if (idx === selectedIndex && !isCorrect) {
+                    btn.classList.remove("bg-slate-800", "border-slate-700");
+                    btn.classList.add("bg-red-950/80", "border-red-500", "text-red-200");
+                    btn.querySelector("i").className = "fa-solid fa-circle-xmark text-red-400 text-lg";
+                }
+            });
+
+            // تحديث النتيجة والمهارات
+            if (isCorrect) {
+                score += 100;
+                correctCount++;
+                streak++;
+                skillsTracker[q.skillId].correct++;
+                
+                // البونص للإجابات المتتالية
+                if (streak >= 3) {
+                    score += 25;
+                }
+            } else {
+                score = Math.max(0, score - 25);
+                wrongCount++;
+                streak = 0;
+            }
+
+            // تحديث العرض
+            document.getElementById("score-display").innerText = score;
+            const streakElem = document.getElementById("streak-container");
+            if (streak > 1) {
+                streakElem.classList.remove("hidden");
+                document.getElementById("streak-display").innerText = `${streak} متتالي!`;
+            } else {
+                streakElem.classList.add("hidden");
+            }
+
+            // إظهار التغذية الراجعة التفصيلية
+            showFeedback(isCorrect, q);
+        }
+
+        function handleTimeout() {
+            const q = questionsBank[currentQuestionIndex];
+            wrongCount++;
+            streak = 0;
+            score = Math.max(0, score - 25);
+            document.getElementById("score-display").innerText = score;
+            document.getElementById("streak-container").classList.add("hidden");
+
+            const buttons = document.querySelectorAll(".option-btn");
+            buttons.forEach((btn, idx) => {
+                btn.disabled = true;
+                if (idx === q.correctAnswer) {
+                    btn.classList.add("bg-emerald-950/80", "border-emerald-500", "text-emerald-200");
+                }
+            });
+
+            showFeedback(false, q, true);
+        }
+
+        function showFeedback(isCorrect, q, isTimeout = false) {
+            const container = document.getElementById("feedback-container");
+            const title = document.getElementById("feedback-title");
+            const reason = document.getElementById("feedback-reason");
+            const advice = document.getElementById("feedback-skill-advice");
+
+            container.classList.remove("hidden");
+
+            if (isTimeout) {
+                container.className = "bg-red-950/40 border border-red-700/60 rounded-xl p-5 space-y-3";
+                title.className = "font-extrabold text-base text-red-400 flex items-center";
+                title.innerHTML = `<i class="fa-solid fa-hourglass-end ml-2"></i> انتهى الوقت المحدد للسؤال! الإجابة الصحيحة هي: (${q.options[q.correctAnswer].charAt(0)})`;
+            } else if (isCorrect) {
+                container.className = "bg-emerald-950/40 border border-emerald-700/60 rounded-xl p-5 space-y-3";
+                title.className = "font-extrabold text-base text-emerald-400 flex items-center";
+                title.innerHTML = `<i class="fa-solid fa-circle-check ml-2"></i> إجابة صحيحة وممتازة! (+100 نقطة)`;
+            } else {
+                container.className = "bg-red-950/40 border border-red-700/60 rounded-xl p-5 space-y-3";
+                title.className = "font-extrabold text-base text-red-400 flex items-center";
+                title.innerHTML = `<i class="fa-solid fa-circle-xmark ml-2"></i> إجابة غير دقيقة! (-25 نقطة). البديل الصحيح هو: (${q.options[q.correctAnswer].charAt(0)})`;
+            }
+
+            reason.innerHTML = `<strong>التعليل العلمي والتفسير:</strong> ${q.explanation}<br><span class="text-xs text-slate-400 mt-1 block"><strong>تحليل البدائل الخاطئة:</strong> ${q.distractorAnalysis}</span>`;
+            advice.innerHTML = `<i class="fa-solid fa-lightbulb ml-1 text-amber-400"></i> <strong>المهارات الاستراتيجية (${q.skillName}):</strong> يُنصح دائماً بمراجعة المادة المصدرية المرفقة بتمعن واستخراج الدليل المباشر قبل اختيار البديل النهائي.`;
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questionsBank.length) {
+                loadQuestion();
+            } else {
+                finishGame();
+            }
+        }
+
+        // ==================== الوسائل المساعدة ====================
+        
+        function useHelp5050() {
+            if (help5050Used) return;
+            const q = questionsBank[currentQuestionIndex];
+            let removedCount = 0;
+            
+            for (let i = 0; i < 4; i++) {
+                if (i !== q.correctAnswer && removedCount < 2) {
+                    const btn = document.getElementById(`option-${i}`);
+                    if (btn) {
+                        btn.style.opacity = "0.2";
+                        btn.disabled = true;
+                        removedCount++;
+                    }
+                }
+            }
+            help5050Used = true;
+            document.getElementById("help-5050").disabled = true;
+        }
+
+        function useHelpHint() {
+            if (helpHintUsed) return;
+            const q = questionsBank[currentQuestionIndex];
+            alert(`💡 تلميح تحليلي من أ. رائد السقار:\n\n${q.explanation.substring(0, 90)}...`);
+            helpHintUsed = true;
+            document.getElementById("help-hint").disabled = true;
+        }
+
+        function useHelpTime() {
+            if (helpTimeUsed || !timerEnabled) return;
+            timeLeft += 15;
+            document.getElementById("timer-display").innerText = timeLeft;
+            helpTimeUsed = true;
+            document.getElementById("help-time").disabled = true;
+        }
+
+        // ==================== النتائج ولوحة الأداء والشهادة ====================
+        
+        function finishGame() {
+            clearInterval(timerInterval);
+            document.getElementById("game-screen").classList.add("hidden");
+            document.getElementById("results-screen").classList.remove("hidden");
+
+            const totalQ = questionsBank.length;
+            const percentage = Math.round((correctCount / totalQ) * 100);
+
+            // إعطاء المستوى والتقييم
+            let levelTitle = "";
+            let levelColor = "";
+            if (percentage >= 90) {
+                levelTitle = "خبير متميز 🏆";
+                levelColor = "text-amber-400";
+            } else if (percentage >= 80) {
+                levelTitle = "محلل متقدم 🌟";
+                levelColor = "text-emerald-400";
+            } else if (percentage >= 70) {
+                levelTitle = "متقن للمهارات 👍";
+                levelColor = "text-blue-400";
+            } else if (percentage >= 60) {
+                levelTitle = "في طريق الإتقان 📈";
+                levelColor = "text-amber-300";
+            } else {
+                levelTitle = "يحتاج إلى مزيد من التدريب 📚";
+                levelColor = "text-red-400";
+            }
+
+            // ملء بيانات النتيجة
+            document.getElementById("result-student-name").innerText = `الطالب الخبير: ${studentName}`;
+            document.getElementById("final-score").innerText = score;
+            document.getElementById("final-percentage").innerText = `${percentage}%`;
+            document.getElementById("final-correct-wrong").innerText = `${correctCount} صحيح / ${wrongCount} خاطئ`;
+            
+            const levelElem = document.getElementById("final-level");
+            levelElem.innerText = levelTitle;
+            levelElem.className = `text-sm font-black ${levelColor}`;
+
+            // ملء تفاصيل أداء المهارات الثمانية
+            const skillsContainer = document.getElementById("skills-breakdown");
+            skillsContainer.innerHTML = "";
+
+            Object.keys(skillsTracker).forEach(key => {
+                const sk = skillsTracker[key];
+                const skPercent = sk.total > 0 ? Math.round((sk.correct / sk.total) * 100) : 0;
+                
+                const skillCard = document.createElement("div");
+                skillCard.className = "bg-slate-900 p-3 rounded-lg border border-slate-800 space-y-1";
+                skillCard.innerHTML = `
+                    <div class="flex justify-between font-bold text-slate-200">
+                        <span>المهارة ${key}: ${sk.name}</span>
+                        <span class="${skPercent >= 75 ? 'text-emerald-400' : 'text-amber-400'}">${skPercent}% (${sk.correct}/${sk.total})</span>
+                    </div>
+                    <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                        <div class="bg-gradient-to-r from-amber-500 to-emerald-500 h-full" style="width: ${skPercent}%"></div>
+                    </div>
+                `;
+                skillsContainer.appendChild(skillCard);
+            });
+
+            // تجهيز بيانات شهادة الإنجاز
+            document.getElementById("cert-student-name").innerText = studentName;
+            document.getElementById("cert-percent").innerText = `${percentage}%`;
+            document.getElementById("cert-score").innerText = score;
+            document.getElementById("cert-level").innerText = levelTitle;
+            
+            const today = new Date();
+            const dateStr = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}م`;
+            document.getElementById("cert-date").innerText = dateStr;
+        }
+
+        function printCertificate() {
+            const cert = document.getElementById("printable-certificate");
+            cert.classList.remove("hidden");
+            window.print();
+        }
+
+        function restartGame() {
+            currentQuestionIndex = 0;
+            score = 0;
+            correctCount = 0;
+            wrongCount = 0;
+            streak = 0;
+            help5050Used = false;
+            helpHintUsed = false;
+            helpTimeUsed = false;
+
+            document.getElementById("help-5050").disabled = false;
+            document.getElementById("help-hint").disabled = false;
+            document.getElementById("help-time").disabled = false;
+
+            Object.keys(skillsTracker).forEach(k => {
+                skillsTracker[k].correct = 0;
+            });
+
+            document.getElementById("results-screen").classList.add("hidden");
+            document.getElementById("printable-certificate").classList.add("hidden");
+            document.getElementById("start-screen").classList.remove("hidden");
+        }
+
+        // تحميل اسم الطالب تلقائياً إن وجد في الذاكرة المحلية
+        window.onload = function() {
+            try {
+                const savedName = localStorage.getItem("mbr_social_student_name");
+                if (savedName) {
+                    document.getElementById("student-name").value = savedName;
+                }
+            } catch(e){}
+        };
+    </script>
+</body>
+</html>
